@@ -9,7 +9,16 @@
 /* Begin PBXBuildFile section */
 		E78A83971C332786009C2425 /* Monoid.h in Headers */ = {isa = PBXBuildFile; fileRef = E78A83961C332786009C2425 /* Monoid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E78A839E1C332786009C2425 /* Monoid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78A83931C332786009C2425 /* Monoid.framework */; };
-		E78A83A31C332786009C2425 /* MonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83A21C332786009C2425 /* MonoidTests.swift */; };
+		E78A83AE1C33293E009C2425 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83AD1C33293E009C2425 /* Monoid.swift */; };
+		E78A83B01C332B1F009C2425 /* NumberType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83AF1C332B1F009C2425 /* NumberType.swift */; };
+		E78A83B41C332D33009C2425 /* id.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83B31C332D33009C2425 /* id.swift */; };
+		E78A83B71C3330D1009C2425 /* Orderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83B61C3330D1009C2425 /* Orderable.swift */; };
+		E78A83B91C333246009C2425 /* mappend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83B81C333246009C2425 /* mappend.swift */; };
+		E78A83BC1C3337F8009C2425 /* OrderingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83BB1C3337F8009C2425 /* OrderingTests.swift */; };
+		E78A83BE1C333B6C009C2425 /* OrderableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83BD1C333B6C009C2425 /* OrderableTests.swift */; };
+		E78A83C01C33DA8F009C2425 /* OrderingMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83BF1C33DA8F009C2425 /* OrderingMonoidTests.swift */; };
+		E78A83C21C33DDD8009C2425 /* ArrayMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83C11C33DDD8009C2425 /* ArrayMonoidTests.swift */; };
+		E78A83C41C33E209009C2425 /* StringMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83C31C33E209009C2425 /* StringMonoidTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +35,18 @@
 		E78A83931C332786009C2425 /* Monoid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monoid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78A83961C332786009C2425 /* Monoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monoid.h; sourceTree = "<group>"; };
 		E78A83981C332786009C2425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E78A839D1C332786009C2425 /* MonoidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MonoidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		E78A83A21C332786009C2425 /* MonoidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonoidTests.swift; sourceTree = "<group>"; };
+		E78A839D1C332786009C2425 /* MonoidTests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MonoidTests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78A83A41C332786009C2425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E78A83AD1C33293E009C2425 /* Monoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monoid.swift; path = Types/Monoid.swift; sourceTree = "<group>"; };
+		E78A83AF1C332B1F009C2425 /* NumberType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberType.swift; path = Types/NumberType.swift; sourceTree = "<group>"; };
+		E78A83B31C332D33009C2425 /* id.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = id.swift; path = Functions/id.swift; sourceTree = "<group>"; };
+		E78A83B61C3330D1009C2425 /* Orderable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Orderable.swift; path = Types/Orderable.swift; sourceTree = "<group>"; };
+		E78A83B81C333246009C2425 /* mappend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mappend.swift; path = Operators/mappend.swift; sourceTree = "<group>"; };
+		E78A83BB1C3337F8009C2425 /* OrderingTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderingTests.swift; sourceTree = "<group>"; };
+		E78A83BD1C333B6C009C2425 /* OrderableTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderableTests.swift; sourceTree = "<group>"; };
+		E78A83BF1C33DA8F009C2425 /* OrderingMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderingMonoidTests.swift; sourceTree = "<group>"; };
+		E78A83C11C33DDD8009C2425 /* ArrayMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayMonoidTests.swift; sourceTree = "<group>"; };
+		E78A83C31C33E209009C2425 /* StringMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMonoidTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E78A83931C332786009C2425 /* Monoid.framework */,
-				E78A839D1C332786009C2425 /* MonoidTests.xctest */,
+				E78A839D1C332786009C2425 /* MonoidTests-Mac.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +89,10 @@
 		E78A83951C332786009C2425 /* Monoid */ = {
 			isa = PBXGroup;
 			children = (
-				E78A83961C332786009C2425 /* Monoid.h */,
-				E78A83981C332786009C2425 /* Info.plist */,
+				E78A83B21C332CBE009C2425 /* Types */,
+				E78A83B51C332D5B009C2425 /* Functions */,
+				E78A83BA1C333251009C2425 /* Operators */,
+				E78A83B11C332C98009C2425 /* Supporting Files */,
 			);
 			path = Monoid;
 			sourceTree = "<group>";
@@ -80,10 +100,49 @@
 		E78A83A11C332786009C2425 /* MonoidTests */ = {
 			isa = PBXGroup;
 			children = (
-				E78A83A21C332786009C2425 /* MonoidTests.swift */,
+				E78A83BD1C333B6C009C2425 /* OrderableTests.swift */,
+				E78A83BB1C3337F8009C2425 /* OrderingTests.swift */,
+				E78A83BF1C33DA8F009C2425 /* OrderingMonoidTests.swift */,
+				E78A83C11C33DDD8009C2425 /* ArrayMonoidTests.swift */,
+				E78A83C31C33E209009C2425 /* StringMonoidTests.swift */,
 				E78A83A41C332786009C2425 /* Info.plist */,
 			);
 			path = MonoidTests;
+			sourceTree = "<group>";
+		};
+		E78A83B11C332C98009C2425 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E78A83961C332786009C2425 /* Monoid.h */,
+				E78A83981C332786009C2425 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E78A83B21C332CBE009C2425 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				E78A83AD1C33293E009C2425 /* Monoid.swift */,
+				E78A83AF1C332B1F009C2425 /* NumberType.swift */,
+				E78A83B61C3330D1009C2425 /* Orderable.swift */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
+		E78A83B51C332D5B009C2425 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				E78A83B31C332D33009C2425 /* id.swift */,
+			);
+			name = Functions;
+			sourceTree = "<group>";
+		};
+		E78A83BA1C333251009C2425 /* Operators */ = {
+			isa = PBXGroup;
+			children = (
+				E78A83B81C333246009C2425 /* mappend.swift */,
+			);
+			name = Operators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -100,9 +159,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		E78A83921C332786009C2425 /* Monoid */ = {
+		E78A83921C332786009C2425 /* Monoid-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E78A83A71C332786009C2425 /* Build configuration list for PBXNativeTarget "Monoid" */;
+			buildConfigurationList = E78A83A71C332786009C2425 /* Build configuration list for PBXNativeTarget "Monoid-Mac" */;
 			buildPhases = (
 				E78A838E1C332786009C2425 /* Sources */,
 				E78A838F1C332786009C2425 /* Frameworks */,
@@ -113,14 +172,14 @@
 			);
 			dependencies = (
 			);
-			name = Monoid;
+			name = "Monoid-Mac";
 			productName = Monoid;
 			productReference = E78A83931C332786009C2425 /* Monoid.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		E78A839C1C332786009C2425 /* MonoidTests */ = {
+		E78A839C1C332786009C2425 /* MonoidTests-Mac */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E78A83AA1C332786009C2425 /* Build configuration list for PBXNativeTarget "MonoidTests" */;
+			buildConfigurationList = E78A83AA1C332786009C2425 /* Build configuration list for PBXNativeTarget "MonoidTests-Mac" */;
 			buildPhases = (
 				E78A83991C332786009C2425 /* Sources */,
 				E78A839A1C332786009C2425 /* Frameworks */,
@@ -131,9 +190,9 @@
 			dependencies = (
 				E78A83A01C332786009C2425 /* PBXTargetDependency */,
 			);
-			name = MonoidTests;
+			name = "MonoidTests-Mac";
 			productName = MonoidTests;
-			productReference = E78A839D1C332786009C2425 /* MonoidTests.xctest */;
+			productReference = E78A839D1C332786009C2425 /* MonoidTests-Mac.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -166,8 +225,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E78A83921C332786009C2425 /* Monoid */,
-				E78A839C1C332786009C2425 /* MonoidTests */,
+				E78A83921C332786009C2425 /* Monoid-Mac */,
+				E78A839C1C332786009C2425 /* MonoidTests-Mac */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E78A83B01C332B1F009C2425 /* NumberType.swift in Sources */,
+				E78A83B41C332D33009C2425 /* id.swift in Sources */,
+				E78A83B71C3330D1009C2425 /* Orderable.swift in Sources */,
+				E78A83AE1C33293E009C2425 /* Monoid.swift in Sources */,
+				E78A83B91C333246009C2425 /* mappend.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +265,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E78A83A31C332786009C2425 /* MonoidTests.swift in Sources */,
+				E78A83BE1C333B6C009C2425 /* OrderableTests.swift in Sources */,
+				E78A83C21C33DDD8009C2425 /* ArrayMonoidTests.swift in Sources */,
+				E78A83BC1C3337F8009C2425 /* OrderingTests.swift in Sources */,
+				E78A83C41C33E209009C2425 /* StringMonoidTests.swift in Sources */,
+				E78A83C01C33DA8F009C2425 /* OrderingMonoidTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,7 +278,7 @@
 /* Begin PBXTargetDependency section */
 		E78A83A01C332786009C2425 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E78A83921C332786009C2425 /* Monoid */;
+			target = E78A83921C332786009C2425 /* Monoid-Mac */;
 			targetProxy = E78A839F1C332786009C2425 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -305,6 +373,7 @@
 		E78A83A81C332786009C2425 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -315,14 +384,16 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alskipp.Monoid;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Monoid;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		E78A83A91C332786009C2425 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -333,7 +404,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alskipp.Monoid;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Monoid;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -372,7 +443,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E78A83A71C332786009C2425 /* Build configuration list for PBXNativeTarget "Monoid" */ = {
+		E78A83A71C332786009C2425 /* Build configuration list for PBXNativeTarget "Monoid-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E78A83A81C332786009C2425 /* Debug */,
@@ -380,7 +451,7 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		E78A83AA1C332786009C2425 /* Build configuration list for PBXNativeTarget "MonoidTests" */ = {
+		E78A83AA1C332786009C2425 /* Build configuration list for PBXNativeTarget "MonoidTests-Mac" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E78A83AB1C332786009C2425 /* Debug */,
