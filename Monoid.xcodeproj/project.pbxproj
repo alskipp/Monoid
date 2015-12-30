@@ -19,6 +19,7 @@
 		E78A83C01C33DA8F009C2425 /* OrderingMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83BF1C33DA8F009C2425 /* OrderingMonoidTests.swift */; };
 		E78A83C21C33DDD8009C2425 /* ArrayMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83C11C33DDD8009C2425 /* ArrayMonoidTests.swift */; };
 		E78A83C41C33E209009C2425 /* StringMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83C31C33E209009C2425 /* StringMonoidTests.swift */; };
+		E78A83C91C341BB2009C2425 /* NumberTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83C81C341BB2009C2425 /* NumberTypeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E78A83BF1C33DA8F009C2425 /* OrderingMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderingMonoidTests.swift; sourceTree = "<group>"; };
 		E78A83C11C33DDD8009C2425 /* ArrayMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayMonoidTests.swift; sourceTree = "<group>"; };
 		E78A83C31C33E209009C2425 /* StringMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringMonoidTests.swift; sourceTree = "<group>"; };
+		E78A83C81C341BB2009C2425 /* NumberTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberTypeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				E78A83BF1C33DA8F009C2425 /* OrderingMonoidTests.swift */,
 				E78A83C11C33DDD8009C2425 /* ArrayMonoidTests.swift */,
 				E78A83C31C33E209009C2425 /* StringMonoidTests.swift */,
+				E78A83C81C341BB2009C2425 /* NumberTypeTests.swift */,
 				E78A83A41C332786009C2425 /* Info.plist */,
 			);
 			path = MonoidTests;
@@ -269,6 +272,7 @@
 				E78A83C21C33DDD8009C2425 /* ArrayMonoidTests.swift in Sources */,
 				E78A83BC1C3337F8009C2425 /* OrderingTests.swift in Sources */,
 				E78A83C41C33E209009C2425 /* StringMonoidTests.swift in Sources */,
+				E78A83C91C341BB2009C2425 /* NumberTypeTests.swift in Sources */,
 				E78A83C01C33DA8F009C2425 /* OrderingMonoidTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
