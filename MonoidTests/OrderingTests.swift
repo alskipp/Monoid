@@ -20,6 +20,8 @@ class OrderingTests: XCTestCase {
     
     XCTAssertTrue(Ordering.GT > Ordering.LT)
     XCTAssertTrue(Ordering.GT > Ordering.EQ)
+    
+    XCTAssertFalse(Ordering.EQ > Ordering.EQ)
   }
 
   func testOrderingIsEquatable() {
