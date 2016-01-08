@@ -15,6 +15,12 @@ extension Product: Monoid {
   }
 }
 
+extension Product: CustomStringConvertible {
+  public var description: String {
+    return "Product(\(value))"
+  }
+}
+
 extension Product: Equatable, Comparable, Orderable {}
 
 public func == <N: NumberType>(rhs: Product<N>, lhs: Product<N>) -> Bool {

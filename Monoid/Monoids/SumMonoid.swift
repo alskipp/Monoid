@@ -15,6 +15,12 @@ extension Sum: Monoid {
   }
 }
 
+extension Sum: CustomStringConvertible {
+  public var description: String {
+    return "Sum(\(value))"
+  }
+}
+
 extension Sum: Equatable, Comparable, Orderable {}
 
 public func == <N: NumberType>(rhs: Sum<N>, lhs: Sum<N>) -> Bool {
