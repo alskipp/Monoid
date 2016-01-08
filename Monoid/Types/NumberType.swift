@@ -1,6 +1,6 @@
 //  Copyright © 2015 Al Skipp. All rights reserved.
 
-public protocol NumberType {
+public protocol NumberType: Equatable, Comparable {
   static var zero: Self { get }
   static var one: Self { get }
   func +(lhs: Self, rhs: Self) -> Self
