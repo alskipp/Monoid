@@ -9,9 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Monoid-iOS.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>E7802CF11C3FD96F00F747C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7802D061C3FDA7700F747C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E7802D1F1C3FDC5200F747C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>E78A83921C332786009C2425</key>
 		<dict>
 			<key>primary</key>

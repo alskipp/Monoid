@@ -6,7 +6,7 @@
 //  Copyright © 2015 Al Skipp. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for Monoid.
 FOUNDATION_EXPORT double MonoidVersionNumber;
