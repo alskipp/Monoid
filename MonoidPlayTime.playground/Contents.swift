@@ -21,3 +21,11 @@ All(true) <> All(true) <> All(false)
 
 Any(false) <> Any(false) <> Any(true)
 Any(false) <> Any(false) <> Any(false)
+
+
+let a: Int? = 1
+let b: Int? = 7
+
+First(.None) <> First(a) <> First(b) <> First(.None)
+
+Last(.None) <> Last(a) <> Last(b) <> Last(.None)
