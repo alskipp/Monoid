@@ -29,3 +29,9 @@ let b: Int? = 7
 First(.None) <> First(a) <> First(b) <> First(.None)
 
 Last(.None) <> Last(a) <> Last(b) <> Last(.None)
+
+Min<Int>(2) <> Min(1) <> Min(.None) <> Min(3)
+Min(.None) <> Min<Int>(9) <> Min(1) <> Min(.None) <> Min(5) <> Min(.None)
+
+Max<Int>(2) <> Max(1) <> Max(.None) <> Max(3)
+Max(.None) <> Max<Int>(2) <> Max(1) <> Max(.None) <> Max(5) <> Max(.None)
