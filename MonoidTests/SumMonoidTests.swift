@@ -29,4 +29,8 @@ class SumMonoidTests: XCTestCase {
     XCTAssertTrue(.mconcat([Sum<Int>(0), Sum(0), Sum(0)]) == Sum.mempty)
   }
 
+  func testDescription() {
+    XCTAssertTrue(Sum(1).description == "Sum(1)")
+  }
+  
 }

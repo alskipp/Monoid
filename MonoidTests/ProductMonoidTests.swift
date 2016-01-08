@@ -32,4 +32,8 @@ class ProductMonoidTests: XCTestCase {
     XCTAssertTrue(.mconcat([Product<Int>(1), Product(1), Product(1)]) == Product.mempty)
   }
   
+  func testDescription() {
+    XCTAssertTrue(Product(1).description == "Product(1)")
+  }
+  
 }
