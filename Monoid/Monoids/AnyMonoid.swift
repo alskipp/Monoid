@@ -9,7 +9,7 @@ extension Any: Monoid {
   public static var mempty: Any {
     return Any(false)
   }
-  
+
   public static func mappend(a: Any, _ b: Any) -> Any {
     return Any(a.value || b.value)
   }

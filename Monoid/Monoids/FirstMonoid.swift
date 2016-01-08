@@ -9,7 +9,7 @@ extension First: Monoid {
   public static var mempty: First {
     return First(.None)
   }
-  
+
   public static func mappend(a: First, _ b: First) -> First {
     return a.value.map { _ in a } ?? b
   }

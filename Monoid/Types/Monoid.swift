@@ -1,4 +1,4 @@
-//  Copyright © 2015 Al Skipp. All rights reserved.
+//  Copyright © 2016 Al Skipp. All rights reserved.
 
 public protocol Monoid {
   static var mempty: Self { get }

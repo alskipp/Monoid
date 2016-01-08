@@ -1,4 +1,4 @@
-//  Copyright © 2015 Al Skipp. All rights reserved.
+//  Copyright © 2016 Al Skipp. All rights reserved.
 
 infix operator <> { associativity left precedence 140 }
 

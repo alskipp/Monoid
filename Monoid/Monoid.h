@@ -1,10 +1,4 @@
-//
-//  Monoid.h
-//  Monoid
-//
-//  Created by Alan Skipp on 29/12/2015.
-//  Copyright © 2015 Al Skipp. All rights reserved.
-//
+//  Copyright © 2016 Al Skipp. All rights reserved.
 
 #import <Foundation/Foundation.h>
 

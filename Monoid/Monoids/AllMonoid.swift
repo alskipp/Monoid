@@ -9,7 +9,7 @@ extension All: Monoid {
   public static var mempty: All {
     return All(true)
   }
-  
+
   public static func mappend(a: All, _ b: All) -> All {
     return All(a.value && b.value)
   }

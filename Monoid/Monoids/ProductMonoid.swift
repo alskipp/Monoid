@@ -9,7 +9,7 @@ extension Product: Monoid {
   public static var mempty: Product {
     return Product(T.one)
   }
-  
+
   public static func mappend(a: Product, _ b: Product) -> Product {
     return Product(a.value * b.value)
   }

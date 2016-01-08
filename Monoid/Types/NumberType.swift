@@ -1,4 +1,4 @@
-//  Copyright © 2015 Al Skipp. All rights reserved.
+//  Copyright © 2016 Al Skipp. All rights reserved.
 
 public protocol NumberType: Equatable, Comparable {
   static var zero: Self { get }

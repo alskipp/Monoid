@@ -1,10 +1,4 @@
-//
-//  OrderingTests.swift
-//  Monoid
-//
-//  Created by Alan Skipp on 29/12/2015.
-//  Copyright © 2015 Al Skipp. All rights reserved.
-//
+//  Copyright © 2016 Al Skipp. All rights reserved.
 
 import XCTest
 import Monoid
@@ -17,10 +11,10 @@ class OrderingTests: XCTestCase {
 
     XCTAssertTrue(Ordering.EQ > Ordering.LT)
     XCTAssertTrue(Ordering.EQ < Ordering.GT)
-    
+
     XCTAssertTrue(Ordering.GT > Ordering.LT)
     XCTAssertTrue(Ordering.GT > Ordering.EQ)
-    
+
     XCTAssertFalse(Ordering.EQ > Ordering.EQ)
   }
 

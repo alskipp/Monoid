@@ -28,7 +28,7 @@ public func == <T: Equatable>(x: Min<T>, y: Min<T>) -> Bool {
   return x.value == y.value
 }
 
-public func < <T: Comparable>(x: Min<T>, y: Min<T>) -> Bool {  
+public func < <T: Comparable>(x: Min<T>, y: Min<T>) -> Bool {
   switch (x.value, y.value) {
   case (.None, .None): return false
   case (.None, .Some): return false

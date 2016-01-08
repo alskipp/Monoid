@@ -9,7 +9,7 @@ extension Max: Monoid {
   public static var mempty: Max {
     return Max(.None)
   }
-  
+
   public static func mappend(a: Max, _ b: Max) -> Max {
     return max(a, b)
   }
