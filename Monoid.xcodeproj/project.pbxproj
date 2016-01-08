@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E7802CE51C3FCDFC00F747C3 /* ProductMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE41C3FCDFC00F747C3 /* ProductMonoidTests.swift */; };
+		E7802CE71C3FD1D400F747C3 /* ArrayMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE61C3FD1D400F747C3 /* ArrayMonoid.swift */; };
+		E7802CEA1C3FD25A00F747C3 /* StringMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE91C3FD25A00F747C3 /* StringMonoid.swift */; };
+		E7802CEC1C3FD29600F747C3 /* OrderingMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CEB1C3FD29600F747C3 /* OrderingMonoid.swift */; };
+		E7802CEE1C3FD31800F747C3 /* SumMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CED1C3FD31800F747C3 /* SumMonoid.swift */; };
+		E7802CF01C3FD34400F747C3 /* ProductMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CEF1C3FD34400F747C3 /* ProductMonoid.swift */; };
 		E78A83971C332786009C2425 /* Monoid.h in Headers */ = {isa = PBXBuildFile; fileRef = E78A83961C332786009C2425 /* Monoid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E78A839E1C332786009C2425 /* Monoid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78A83931C332786009C2425 /* Monoid.framework */; };
 		E78A83AE1C33293E009C2425 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83AD1C33293E009C2425 /* Monoid.swift */; };
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		E7802CE41C3FCDFC00F747C3 /* ProductMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductMonoidTests.swift; sourceTree = "<group>"; };
+		E7802CE61C3FD1D400F747C3 /* ArrayMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayMonoid.swift; path = Monoids/ArrayMonoid.swift; sourceTree = "<group>"; };
+		E7802CE91C3FD25A00F747C3 /* StringMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringMonoid.swift; path = Monoids/StringMonoid.swift; sourceTree = "<group>"; };
+		E7802CEB1C3FD29600F747C3 /* OrderingMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderingMonoid.swift; path = Monoids/OrderingMonoid.swift; sourceTree = "<group>"; };
+		E7802CED1C3FD31800F747C3 /* SumMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SumMonoid.swift; path = Monoids/SumMonoid.swift; sourceTree = "<group>"; };
+		E7802CEF1C3FD34400F747C3 /* ProductMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProductMonoid.swift; path = Monoids/ProductMonoid.swift; sourceTree = "<group>"; };
 		E78A83931C332786009C2425 /* Monoid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monoid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78A83961C332786009C2425 /* Monoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monoid.h; sourceTree = "<group>"; };
 		E78A83981C332786009C2425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +84,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7802CE81C3FD1E200F747C3 /* Monoids */ = {
+			isa = PBXGroup;
+			children = (
+				E7802CE61C3FD1D400F747C3 /* ArrayMonoid.swift */,
+				E7802CE91C3FD25A00F747C3 /* StringMonoid.swift */,
+				E7802CEB1C3FD29600F747C3 /* OrderingMonoid.swift */,
+				E7802CED1C3FD31800F747C3 /* SumMonoid.swift */,
+				E7802CEF1C3FD34400F747C3 /* ProductMonoid.swift */,
+			);
+			name = Monoids;
+			sourceTree = "<group>";
+		};
 		E78A83891C332786009C2425 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +156,7 @@
 				E78A83AD1C33293E009C2425 /* Monoid.swift */,
 				E78A83AF1C332B1F009C2425 /* NumberType.swift */,
 				E78A83B61C3330D1009C2425 /* Orderable.swift */,
+				E7802CE81C3FD1E200F747C3 /* Monoids */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -262,11 +285,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7802CEE1C3FD31800F747C3 /* SumMonoid.swift in Sources */,
 				E78A83B01C332B1F009C2425 /* NumberType.swift in Sources */,
+				E7802CE71C3FD1D400F747C3 /* ArrayMonoid.swift in Sources */,
 				E78A83B41C332D33009C2425 /* id.swift in Sources */,
 				E78A83B71C3330D1009C2425 /* Orderable.swift in Sources */,
+				E7802CEA1C3FD25A00F747C3 /* StringMonoid.swift in Sources */,
 				E78A83AE1C33293E009C2425 /* Monoid.swift in Sources */,
 				E78A83B91C333246009C2425 /* mappend.swift in Sources */,
+				E7802CEC1C3FD29600F747C3 /* OrderingMonoid.swift in Sources */,
+				E7802CF01C3FD34400F747C3 /* ProductMonoid.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
