@@ -23,10 +23,10 @@ extension Any: CustomStringConvertible {
 
 extension Any: Equatable, Comparable, Orderable {}
 
-public func == (rhs: Any, lhs: Any) -> Bool {
-  return rhs.value == lhs.value
+public func == (x: Any, y: Any) -> Bool {
+  return x.value == y.value
 }
 
-public func < (rhs: Any, lhs: Any) -> Bool {
-  return rhs.value < lhs.value
+public func < (x: Any, y: Any) -> Bool {
+  return x.value < y.value
 }

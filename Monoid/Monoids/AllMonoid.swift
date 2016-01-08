@@ -23,10 +23,10 @@ extension All: CustomStringConvertible {
 
 extension All: Equatable, Comparable, Orderable {}
 
-public func == (rhs: All, lhs: All) -> Bool {
-  return rhs.value == lhs.value
+public func == (x: All, y: All) -> Bool {
+  return x.value == y.value
 }
 
-public func < (rhs: All, lhs: All) -> Bool {
-  return rhs.value < lhs.value
+public func < (x: All, y: All) -> Bool {
+  return x.value < y.value
 }

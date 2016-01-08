@@ -23,10 +23,10 @@ extension Sum: CustomStringConvertible {
 
 extension Sum: Equatable, Comparable, Orderable {}
 
-public func == <N: NumberType>(rhs: Sum<N>, lhs: Sum<N>) -> Bool {
-  return rhs.value == lhs.value
+public func == <N: NumberType>(x: Sum<N>, y: Sum<N>) -> Bool {
+  return x.value == y.value
 }
 
-public func < <N: NumberType>(rhs: Sum<N>, lhs: Sum<N>) -> Bool {
-  return rhs.value < lhs.value
+public func < <N: NumberType>(x: Sum<N>, y: Sum<N>) -> Bool {
+  return x.value < y.value
 }

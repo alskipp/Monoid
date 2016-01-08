@@ -22,6 +22,6 @@ extension First: CustomStringConvertible {
 }
 
 // It's not currently possible to make `First` Equatable, this is just an override of ==
-public func == <T: Equatable>(rhs: First<T>, lhs: First<T>) -> Bool {
-  return rhs.value == lhs.value
+public func == <T: Equatable>(x: First<T>, y: First<T>) -> Bool {
+  return x.value == y.value
 }

@@ -22,6 +22,6 @@ extension Last: CustomStringConvertible {
 }
 
 // It's not currently possible to make `Last` Equatable, this is just an override of ==
-public func == <T: Equatable>(rhs: Last<T>, lhs: Last<T>) -> Bool {
-  return rhs.value == lhs.value
+public func == <T: Equatable>(x: Last<T>, y: Last<T>) -> Bool {
+  return x.value == y.value
 }

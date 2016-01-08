@@ -23,10 +23,10 @@ extension Product: CustomStringConvertible {
 
 extension Product: Equatable, Comparable, Orderable {}
 
-public func == <N: NumberType>(rhs: Product<N>, lhs: Product<N>) -> Bool {
-  return rhs.value == lhs.value
+public func == <N: NumberType>(x: Product<N>, y: Product<N>) -> Bool {
+  return x.value == y.value
 }
 
-public func < <N: NumberType>(rhs: Product<N>, lhs: Product<N>) -> Bool {
-  return rhs.value < lhs.value
+public func < <N: NumberType>(x: Product<N>, y: Product<N>) -> Bool {
+  return x.value < y.value
 }
