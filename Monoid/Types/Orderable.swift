@@ -1,6 +1,6 @@
 //  Copyright © 2015 Al Skipp. All rights reserved.
 
-public enum Ordering: Equatable, Comparable {
+public enum Ordering: Equatable, Comparable, Orderable {
   case LT, EQ, GT
 }
 

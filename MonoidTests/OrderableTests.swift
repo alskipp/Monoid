@@ -1,10 +1,4 @@
-//
-//  OrderableTests.swift
-//  Monoid
-//
-//  Created by Alan Skipp on 29/12/2015.
 //  Copyright © 2015 Al Skipp. All rights reserved.
-//
 
 import XCTest
 import Monoid
@@ -22,6 +16,20 @@ func < (x: Foo, y: Foo) -> Bool {
 }
 
 class OrderableTests: XCTestCase {
+  
+  func testOrderableOrdering() {
+    XCTAssert(Ordering.LT.compare(.LT) == .EQ)
+    XCTAssert(Ordering.LT.compare(.GT) == .LT)
+    XCTAssert(Ordering.LT.compare(.EQ) == .LT)
+    
+    XCTAssert(Ordering.EQ.compare(.LT) == .GT)
+    XCTAssert(Ordering.EQ.compare(.EQ) == .EQ)
+    XCTAssert(Ordering.EQ.compare(.GT) == .LT)
+
+    XCTAssert(Ordering.GT.compare(.LT) == .GT)
+    XCTAssert(Ordering.GT.compare(.EQ) == .GT)
+    XCTAssert(Ordering.GT.compare(.GT) == .EQ)
+  }
   
   func testFooOrderableCompare() {
     XCTAssert(Foo.A.compare(Foo.A) == .EQ)
@@ -44,4 +52,3 @@ class OrderableTests: XCTestCase {
   }
 
 }
-
