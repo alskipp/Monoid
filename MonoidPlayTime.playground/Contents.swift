@@ -15,3 +15,9 @@ Product<Int>(10) <> Product(2) <> Product(1)
 
 Ordering.EQ <> .EQ <> .LT <> .GT <> .EQ
 Ordering.EQ <> .EQ <> .GT <> .LT <> .EQ
+
+All(true) <> All(true) <> All(true)
+All(true) <> All(true) <> All(false)
+
+Any(false) <> Any(false) <> Any(true)
+Any(false) <> Any(false) <> Any(false)
