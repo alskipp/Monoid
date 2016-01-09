@@ -113,6 +113,10 @@
 		E7802DC81C4124F000F747C3 /* EndoMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802DC71C4124F000F747C3 /* EndoMonoidTests.swift */; };
 		E7802DC91C4124F000F747C3 /* EndoMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802DC71C4124F000F747C3 /* EndoMonoidTests.swift */; };
 		E7802DCA1C4124F000F747C3 /* EndoMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802DC71C4124F000F747C3 /* EndoMonoidTests.swift */; };
+		E7802DCC1C41300000F747C3 /* Ordering.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802DCB1C41300000F747C3 /* Ordering.swift */; };
+		E7802DCD1C41300000F747C3 /* Ordering.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802DCB1C41300000F747C3 /* Ordering.swift */; };
+		E7802DCE1C41300000F747C3 /* Ordering.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802DCB1C41300000F747C3 /* Ordering.swift */; };
+		E7802DCF1C41300000F747C3 /* Ordering.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802DCB1C41300000F747C3 /* Ordering.swift */; };
 		E78A83971C332786009C2425 /* Monoid.h in Headers */ = {isa = PBXBuildFile; fileRef = E78A83961C332786009C2425 /* Monoid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E78A839E1C332786009C2425 /* Monoid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E78A83931C332786009C2425 /* Monoid.framework */; };
 		E78A83AE1C33293E009C2425 /* Monoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78A83AD1C33293E009C2425 /* Monoid.swift */; };
@@ -179,6 +183,7 @@
 		E7802DBE1C4016AA00F747C3 /* MaxMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxMonoidTests.swift; sourceTree = "<group>"; };
 		E7802DC21C40219A00F747C3 /* EndoMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EndoMonoid.swift; path = Monoids/EndoMonoid.swift; sourceTree = "<group>"; };
 		E7802DC71C4124F000F747C3 /* EndoMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndoMonoidTests.swift; sourceTree = "<group>"; };
+		E7802DCB1C41300000F747C3 /* Ordering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ordering.swift; path = Types/Ordering.swift; sourceTree = "<group>"; };
 		E78A83931C332786009C2425 /* Monoid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monoid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E78A83961C332786009C2425 /* Monoid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Monoid.h; sourceTree = "<group>"; };
 		E78A83981C332786009C2425 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -344,6 +349,7 @@
 			children = (
 				E78A83AD1C33293E009C2425 /* Monoid.swift */,
 				E78A83AF1C332B1F009C2425 /* NumberType.swift */,
+				E7802DCB1C41300000F747C3 /* Ordering.swift */,
 				E78A83B61C3330D1009C2425 /* Orderable.swift */,
 				E7802CE81C3FD1E200F747C3 /* Monoids */,
 			);
@@ -637,6 +643,7 @@
 				E7802CF31C3FD96F00F747C3 /* SumMonoid.swift in Sources */,
 				E7802DA51C3FFEDC00F747C3 /* LastMonoid.swift in Sources */,
 				E7802CF41C3FD96F00F747C3 /* NumberType.swift in Sources */,
+				E7802DCD1C41300000F747C3 /* Ordering.swift in Sources */,
 				E7802CF51C3FD96F00F747C3 /* ArrayMonoid.swift in Sources */,
 				E7802CF61C3FD96F00F747C3 /* id.swift in Sources */,
 				E7802CF71C3FD96F00F747C3 /* Orderable.swift in Sources */,
@@ -683,6 +690,7 @@
 				E7802D4D1C3FDF3800F747C3 /* SumMonoid.swift in Sources */,
 				E7802DA61C3FFEDC00F747C3 /* LastMonoid.swift in Sources */,
 				E7802D4E1C3FDF3800F747C3 /* NumberType.swift in Sources */,
+				E7802DCE1C41300000F747C3 /* Ordering.swift in Sources */,
 				E7802D4F1C3FDF3800F747C3 /* ArrayMonoid.swift in Sources */,
 				E7802D501C3FDF3800F747C3 /* id.swift in Sources */,
 				E7802D511C3FDF3800F747C3 /* Orderable.swift in Sources */,
@@ -707,6 +715,7 @@
 				E7802D621C3FE16700F747C3 /* SumMonoid.swift in Sources */,
 				E7802DA71C3FFEDC00F747C3 /* LastMonoid.swift in Sources */,
 				E7802D631C3FE16700F747C3 /* NumberType.swift in Sources */,
+				E7802DCF1C41300000F747C3 /* Ordering.swift in Sources */,
 				E7802D641C3FE16700F747C3 /* ArrayMonoid.swift in Sources */,
 				E7802D651C3FE16700F747C3 /* id.swift in Sources */,
 				E7802D661C3FE16700F747C3 /* Orderable.swift in Sources */,
@@ -753,6 +762,7 @@
 				E7802CEE1C3FD31800F747C3 /* SumMonoid.swift in Sources */,
 				E7802DA41C3FFEDB00F747C3 /* LastMonoid.swift in Sources */,
 				E78A83B01C332B1F009C2425 /* NumberType.swift in Sources */,
+				E7802DCC1C41300000F747C3 /* Ordering.swift in Sources */,
 				E7802CE71C3FD1D400F747C3 /* ArrayMonoid.swift in Sources */,
 				E78A83B41C332D33009C2425 /* id.swift in Sources */,
 				E78A83B71C3330D1009C2425 /* Orderable.swift in Sources */,

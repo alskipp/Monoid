@@ -1,23 +1,11 @@
 //  Copyright © 2016 Al Skipp. All rights reserved.
 
-public enum Ordering: Equatable, Comparable, Orderable {
-  case LT, EQ, GT
-}
-
-public func < (x: Ordering, y: Ordering) -> Bool {
-  switch (x, y) {
-  case (.LT, .EQ), (.LT, .GT), (.EQ, .GT): return true
-  default: return false
-  }
-}
-
-
 public protocol Orderable: Comparable {
   func compare(other: Self) -> Ordering
 }
 
 public extension Orderable {
-  public func compare(other: Self) -> Ordering {
+  func compare(other: Self) -> Ordering {
     if self == other { return .EQ }
     if self < other { return .LT }
     return .GT
