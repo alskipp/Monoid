@@ -1,14 +1,5 @@
 //  Copyright © 2016 Al Skipp. All rights reserved.
 
-public protocol NumberType: Equatable, Comparable {
-  static var zero: Self { get }
-  static var one: Self { get }
-  func +(lhs: Self, rhs: Self) -> Self
-  func -(lhs: Self, rhs: Self) -> Self
-  func *(lhs: Self, rhs: Self) -> Self
-}
-
-
 extension Int: NumberType {
   public static var zero: Int { return 0 }
   public static var one: Int { return 1 }
