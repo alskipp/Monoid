@@ -6,8 +6,8 @@
 */
 import Monoid
 /*:
-As anything with a name form category theory beginnning with ‘M’ is likely to provoke suspicion or fear,
-let’s start with a completely practical example – sorting things.
+As anything with a name from category theory beginnning with ‘M’ is likely to provoke suspicion or fear,
+let’s start with a compelling practical example – sorting things.
 
 Given a data structure with several properties, the challenge is, how to sort an Array of these items
 by arbitrary properties? For example, take a look at the **PersonData** struct below.
