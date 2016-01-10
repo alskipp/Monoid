@@ -12,11 +12,17 @@ import Monoid
 //: * * *
 "Hello" <> " " <> "World" <> "!"
 //: * * *
+[1,2] <> [] <> [3] <> []
 [1,2,3] <> [4] <> [5,6] <> [7,8,9]
 //: * * *
+Set(["a", "b"]) <> Set() <> Set(["c"])
+Set(["a", "b"]) <> Set() <> Set(["a", "c", "d"])
+//: * * *
+Sum<Int>(0) <> Sum(0) <> Sum(1)
 Sum<Int>(10) <> Sum(2) <> Sum(1)
 
-Product<Int>(10) <> Product(2) <> Product(1)
+Product<Int>(1) <> Product(1) <> Product(1)
+Product<Int>(10) <> Product(2) <> Product(3)
 //: * * *
 Ordering.EQ <> .EQ <> .LT <> .GT <> .EQ
 Ordering.EQ <> .EQ <> .GT <> .LT <> .EQ
@@ -47,4 +53,5 @@ let timesThree = { (i: Int) in i * 3 }
 
 (Endo(plusTwo) <> Endo(timesThree) <> Endo(plusTwo)).value(2)
 Endo<Int>.mconcat([Endo(plusTwo), Endo(timesThree), Endo(timesThree)]).value(2)
+
 //: [Back to previous the page](@previous)
