@@ -23,6 +23,13 @@
 		E740C7DC1C41A4F10048D302 /* OrderableInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7DA1C41A4F10048D302 /* OrderableInstances.swift */; };
 		E740C7DD1C41A4F10048D302 /* OrderableInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7DA1C41A4F10048D302 /* OrderableInstances.swift */; };
 		E740C7DE1C41A4F10048D302 /* OrderableInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7DA1C41A4F10048D302 /* OrderableInstances.swift */; };
+		E740C7E01C42E9280048D302 /* SetMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7DF1C42E9280048D302 /* SetMonoid.swift */; };
+		E740C7E11C42E9280048D302 /* SetMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7DF1C42E9280048D302 /* SetMonoid.swift */; };
+		E740C7E21C42E9280048D302 /* SetMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7DF1C42E9280048D302 /* SetMonoid.swift */; };
+		E740C7E31C42E9280048D302 /* SetMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7DF1C42E9280048D302 /* SetMonoid.swift */; };
+		E740C7E51C42E9CF0048D302 /* SetMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */; };
+		E740C7E61C42E9CF0048D302 /* SetMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */; };
+		E740C7E71C42E9CF0048D302 /* SetMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */; };
 		E7802CE51C3FCDFC00F747C3 /* ProductMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE41C3FCDFC00F747C3 /* ProductMonoidTests.swift */; };
 		E7802CE71C3FD1D400F747C3 /* ArrayMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE61C3FD1D400F747C3 /* ArrayMonoid.swift */; };
 		E7802CEA1C3FD25A00F747C3 /* StringMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE91C3FD25A00F747C3 /* StringMonoid.swift */; };
@@ -188,6 +195,8 @@
 		E740C7CF1C41A2BC0048D302 /* SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SequenceType.swift; path = Extensions/SequenceType.swift; sourceTree = "<group>"; };
 		E740C7D51C41A4A40048D302 /* NumberTypeInstances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NumberTypeInstances.swift; path = Extensions/NumberTypeInstances.swift; sourceTree = "<group>"; };
 		E740C7DA1C41A4F10048D302 /* OrderableInstances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderableInstances.swift; path = Extensions/OrderableInstances.swift; sourceTree = "<group>"; };
+		E740C7DF1C42E9280048D302 /* SetMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetMonoid.swift; path = Monoids/SetMonoid.swift; sourceTree = "<group>"; };
+		E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMonoidTests.swift; sourceTree = "<group>"; };
 		E7802CE41C3FCDFC00F747C3 /* ProductMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductMonoidTests.swift; sourceTree = "<group>"; };
 		E7802CE61C3FD1D400F747C3 /* ArrayMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayMonoid.swift; path = Monoids/ArrayMonoid.swift; sourceTree = "<group>"; };
 		E7802CE91C3FD25A00F747C3 /* StringMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringMonoid.swift; path = Monoids/StringMonoid.swift; sourceTree = "<group>"; };
@@ -316,6 +325,7 @@
 			isa = PBXGroup;
 			children = (
 				E7802CE61C3FD1D400F747C3 /* ArrayMonoid.swift */,
+				E740C7DF1C42E9280048D302 /* SetMonoid.swift */,
 				E7802CE91C3FD25A00F747C3 /* StringMonoid.swift */,
 				E7802CEB1C3FD29600F747C3 /* OrderingMonoid.swift */,
 				E7802CED1C3FD31800F747C3 /* SumMonoid.swift */,
@@ -378,6 +388,7 @@
 				E7BF440A1C41891000AD4581 /* DownTests.swift */,
 				E78A83C81C341BB2009C2425 /* NumberTypeTests.swift */,
 				E78A83C11C33DDD8009C2425 /* ArrayMonoidTests.swift */,
+				E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */,
 				E78A83C31C33E209009C2425 /* StringMonoidTests.swift */,
 				E79F03281C34575800ECA921 /* SumMonoidTests.swift */,
 				E7802CE41C3FCDFC00F747C3 /* ProductMonoidTests.swift */,
@@ -708,6 +719,7 @@
 				E7802DB71C4010B300F747C3 /* MaxMonoid.swift in Sources */,
 				E7802CF81C3FD96F00F747C3 /* StringMonoid.swift in Sources */,
 				E7802CF91C3FD96F00F747C3 /* Monoid.swift in Sources */,
+				E740C7E11C42E9280048D302 /* SetMonoid.swift in Sources */,
 				E7802DB21C40093E00F747C3 /* MinMonoid.swift in Sources */,
 				E7802CFA1C3FD96F00F747C3 /* mappend.swift in Sources */,
 				E7802D931C3FF14800F747C3 /* AnyMonoid.swift in Sources */,
@@ -726,6 +738,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E740C7E61C42E9CF0048D302 /* SetMonoidTests.swift in Sources */,
 				E7802D2B1C3FDC7900F747C3 /* OrderableTests.swift in Sources */,
 				E7802D2C1C3FDC7900F747C3 /* OrderingTests.swift in Sources */,
 				E7802D9C1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */,
@@ -762,6 +775,7 @@
 				E7802DB81C4010B300F747C3 /* MaxMonoid.swift in Sources */,
 				E7802D521C3FDF3800F747C3 /* StringMonoid.swift in Sources */,
 				E7802D531C3FDF3800F747C3 /* Monoid.swift in Sources */,
+				E740C7E21C42E9280048D302 /* SetMonoid.swift in Sources */,
 				E7802DB31C40093E00F747C3 /* MinMonoid.swift in Sources */,
 				E7802D541C3FDF3800F747C3 /* mappend.swift in Sources */,
 				E7802D941C3FF14800F747C3 /* AnyMonoid.swift in Sources */,
@@ -792,6 +806,7 @@
 				E7802DB91C4010B300F747C3 /* MaxMonoid.swift in Sources */,
 				E7802D671C3FE16700F747C3 /* StringMonoid.swift in Sources */,
 				E7802D681C3FE16700F747C3 /* Monoid.swift in Sources */,
+				E740C7E31C42E9280048D302 /* SetMonoid.swift in Sources */,
 				E7802DB41C40093E00F747C3 /* MinMonoid.swift in Sources */,
 				E7802D691C3FE16700F747C3 /* mappend.swift in Sources */,
 				E7802D951C3FF14800F747C3 /* AnyMonoid.swift in Sources */,
@@ -810,6 +825,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E740C7E71C42E9CF0048D302 /* SetMonoidTests.swift in Sources */,
 				E7802D841C3FE23500F747C3 /* OrderableTests.swift in Sources */,
 				E7802D851C3FE23500F747C3 /* OrderingTests.swift in Sources */,
 				E7802D9D1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */,
@@ -846,6 +862,7 @@
 				E7802DB61C4010B300F747C3 /* MaxMonoid.swift in Sources */,
 				E7802CEA1C3FD25A00F747C3 /* StringMonoid.swift in Sources */,
 				E78A83AE1C33293E009C2425 /* Monoid.swift in Sources */,
+				E740C7E01C42E9280048D302 /* SetMonoid.swift in Sources */,
 				E7802DB11C40093E00F747C3 /* MinMonoid.swift in Sources */,
 				E78A83B91C333246009C2425 /* mappend.swift in Sources */,
 				E7802D921C3FF14800F747C3 /* AnyMonoid.swift in Sources */,
@@ -864,6 +881,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E740C7E51C42E9CF0048D302 /* SetMonoidTests.swift in Sources */,
 				E78A83BE1C333B6C009C2425 /* OrderableTests.swift in Sources */,
 				E79F03291C34575800ECA921 /* SumMonoidTests.swift in Sources */,
 				E7802D9B1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */,
