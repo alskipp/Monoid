@@ -5,7 +5,7 @@ import Monoid
 
 class SemigroupTests: XCTestCase {
 
-  func testSconcatConvenience() {
+  func testSconcat() {
     // unsafe convenience `sconcat` which fails with an empty Array
     XCTAssert(String.sconcat(["a"]) == "a")
     XCTAssert(String.sconcat(["a", "b", "c"]) == "abc")
