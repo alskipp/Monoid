@@ -1,10 +1,10 @@
 /*:
 **Note:** For **Monoid** to be imported into the Playground, ensure that the **Monoid-Mac** *scheme* is selected from the list of schemes.
 
-[Back to previous the page](@previous)
+[**<- Previous page**](@previous)
 * * *
 
-## A mob of Monoids.
+## A mob of Monoids
 
 **TODO:** More explanation!
 */
@@ -54,4 +54,4 @@ let timesThree = { (i: Int) in i * 3 }
 (Endo(plusTwo) <> Endo(timesThree) <> Endo(plusTwo)).value(2)
 Endo<Int>.mconcat([Endo(plusTwo), Endo(timesThree), Endo(timesThree)]).value(2)
 
-//: [Back to previous the page](@previous)
+//: [**Next page ->** (Nuclear Error!)](@next)

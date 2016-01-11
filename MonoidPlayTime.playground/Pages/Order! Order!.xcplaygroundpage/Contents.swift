@@ -63,5 +63,7 @@ Now let’s say we need to sort by **name** -> **age** -> **weight** -> **height
 
 Which is easier to change? Give it a go.
 
-[Next page (Show me the Monoids!)](@next)
+* * *
+
+[**Next page ->** (Show me the Monoids!)](@next)
 */
