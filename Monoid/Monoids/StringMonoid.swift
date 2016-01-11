@@ -5,7 +5,7 @@ extension String: Monoid {
     return ""
   }
 
-  public static func mappend(a: String, _ b: String) -> String {
+  public static func combine(a: String, _ b: String) -> String {
     return a + b
   }
 

@@ -10,7 +10,7 @@ extension Min: Monoid {
     return Min(.None)
   }
 
-  public static func mappend(a: Min, _ b: Min) -> Min {
+  public static func combine(a: Min, _ b: Min) -> Min {
     return min(a, b)
   }
 }

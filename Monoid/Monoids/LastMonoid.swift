@@ -10,7 +10,7 @@ extension Last: Monoid {
     return Last(.None)
   }
 
-  public static func mappend(a: Last, _ b: Last) -> Last {
+  public static func combine(a: Last, _ b: Last) -> Last {
     return b.value.map { _ in b } ?? a
   }
 }

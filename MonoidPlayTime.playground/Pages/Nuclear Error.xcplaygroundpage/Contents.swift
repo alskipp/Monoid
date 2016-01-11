@@ -26,7 +26,7 @@ enum CoreStatus {
 extension CoreStatus: Monoid {
   static var mempty: CoreStatus { return .DontPanic }
 
-  static func mappend(a: CoreStatus, _ b: CoreStatus) -> CoreStatus {
+  static func combine(a: CoreStatus, _ b: CoreStatus) -> CoreStatus {
     switch (a, b) {
     case let (Panic(x), .Panic(y)): return .Panic(warnings: x <> y)
     case let (Worry(x), .Worry(y)): return .Worry(warnings: x <> y)

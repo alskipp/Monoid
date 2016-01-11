@@ -10,7 +10,7 @@ extension Endo: Monoid {
     return Endo(id)
   }
 
-  public static func mappend(f: Endo, _ g: Endo) -> Endo {
+  public static func combine(f: Endo, _ g: Endo) -> Endo {
     return Endo( { g.value(f.value($0)) } )
   }
 }

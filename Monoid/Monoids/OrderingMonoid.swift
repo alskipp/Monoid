@@ -5,7 +5,7 @@ extension Ordering: Monoid {
     return .EQ
   }
 
-  public static func mappend(a: Ordering, _ b: Ordering) -> Ordering {
+  public static func combine(a: Ordering, _ b: Ordering) -> Ordering {
     switch (a, b) {
     case (.EQ, _): return b
     default: return a

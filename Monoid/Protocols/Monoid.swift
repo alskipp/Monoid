@@ -1,13 +1,12 @@
 //  Copyright © 2016 Al Skipp. All rights reserved.
 
-public protocol Monoid {
+public protocol Monoid: Semigroup {
   static var mempty: Self { get }
-  static func mappend(a: Self, _ b: Self) -> Self
   static func mconcat(a: [Self]) -> Self
 }
 
 public extension Monoid {
-  static func mconcat(a: [Self]) -> Self {
-    return a.reduce(mempty, combine: mappend)
+  static func mconcat(xs: [Self]) -> Self {
+    return .sconcat(mempty, xs)
   }
 }

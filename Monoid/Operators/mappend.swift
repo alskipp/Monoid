@@ -2,6 +2,6 @@
 
 infix operator <> { associativity left precedence 140 }
 
-public func <> <A: Monoid>(lhs: A, rhs: A) -> A {
-  return .mappend(lhs, rhs)
+public func <> <A: Semigroup>(lhs: A, rhs: A) -> A {
+  return .combine(lhs, rhs)
 }

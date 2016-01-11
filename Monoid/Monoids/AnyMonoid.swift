@@ -10,7 +10,7 @@ extension Any: Monoid {
     return Any(false)
   }
 
-  public static func mappend(a: Any, _ b: Any) -> Any {
+  public static func combine(a: Any, _ b: Any) -> Any {
     return Any(a.value || b.value)
   }
 }

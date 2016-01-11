@@ -10,7 +10,7 @@ extension Sum: Monoid {
     return Sum(T.zero)
   }
 
-  public static func mappend(a: Sum, _ b: Sum) -> Sum {
+  public static func combine(a: Sum, _ b: Sum) -> Sum {
     return Sum(a.value + b.value)
   }
 }

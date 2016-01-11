@@ -5,7 +5,7 @@ extension Array: Monoid {
     return []
   }
 
-  public static func mappend(a: [Element], _ b: [Element]) -> [Element] {
+  public static func combine(a: [Element], _ b: [Element]) -> [Element] {
     return a + b
   }
 

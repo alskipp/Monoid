@@ -10,7 +10,7 @@ extension Max: Monoid {
     return Max(.None)
   }
 
-  public static func mappend(a: Max, _ b: Max) -> Max {
+  public static func combine(a: Max, _ b: Max) -> Max {
     return max(a, b)
   }
 }

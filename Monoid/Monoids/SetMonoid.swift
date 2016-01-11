@@ -5,7 +5,7 @@ extension Set: Monoid {
     return Set()
   }
 
-  public static func mappend(a: Set, _ b: Set) -> Set {
+  public static func combine(a: Set, _ b: Set) -> Set {
     return a.union(b)
   }
 

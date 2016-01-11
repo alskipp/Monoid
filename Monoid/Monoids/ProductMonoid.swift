@@ -10,7 +10,7 @@ extension Product: Monoid {
     return Product(T.one)
   }
 
-  public static func mappend(a: Product, _ b: Product) -> Product {
+  public static func combine(a: Product, _ b: Product) -> Product {
     return Product(a.value * b.value)
   }
 }

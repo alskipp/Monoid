@@ -30,6 +30,13 @@
 		E740C7E51C42E9CF0048D302 /* SetMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */; };
 		E740C7E61C42E9CF0048D302 /* SetMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */; };
 		E740C7E71C42E9CF0048D302 /* SetMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */; };
+		E740C7ED1C443B6F0048D302 /* SemigroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7EC1C443B6F0048D302 /* SemigroupTests.swift */; };
+		E740C7EE1C443B6F0048D302 /* SemigroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7EC1C443B6F0048D302 /* SemigroupTests.swift */; };
+		E740C7EF1C443B6F0048D302 /* SemigroupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7EC1C443B6F0048D302 /* SemigroupTests.swift */; };
+		E740C7F11C443CC10048D302 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7F01C443CC10048D302 /* Semigroup.swift */; };
+		E740C7F21C443CC10048D302 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7F01C443CC10048D302 /* Semigroup.swift */; };
+		E740C7F31C443CC10048D302 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7F01C443CC10048D302 /* Semigroup.swift */; };
+		E740C7F41C443CC10048D302 /* Semigroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = E740C7F01C443CC10048D302 /* Semigroup.swift */; };
 		E7802CE51C3FCDFC00F747C3 /* ProductMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE41C3FCDFC00F747C3 /* ProductMonoidTests.swift */; };
 		E7802CE71C3FD1D400F747C3 /* ArrayMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE61C3FD1D400F747C3 /* ArrayMonoid.swift */; };
 		E7802CEA1C3FD25A00F747C3 /* StringMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802CE91C3FD25A00F747C3 /* StringMonoid.swift */; };
@@ -197,6 +204,8 @@
 		E740C7DA1C41A4F10048D302 /* OrderableInstances.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OrderableInstances.swift; path = Extensions/OrderableInstances.swift; sourceTree = "<group>"; };
 		E740C7DF1C42E9280048D302 /* SetMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetMonoid.swift; path = Monoids/SetMonoid.swift; sourceTree = "<group>"; };
 		E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetMonoidTests.swift; sourceTree = "<group>"; };
+		E740C7EC1C443B6F0048D302 /* SemigroupTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemigroupTests.swift; sourceTree = "<group>"; };
+		E740C7F01C443CC10048D302 /* Semigroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Semigroup.swift; path = Protocols/Semigroup.swift; sourceTree = "<group>"; };
 		E7802CE41C3FCDFC00F747C3 /* ProductMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductMonoidTests.swift; sourceTree = "<group>"; };
 		E7802CE61C3FD1D400F747C3 /* ArrayMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArrayMonoid.swift; path = Monoids/ArrayMonoid.swift; sourceTree = "<group>"; };
 		E7802CE91C3FD25A00F747C3 /* StringMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringMonoid.swift; path = Monoids/StringMonoid.swift; sourceTree = "<group>"; };
@@ -314,6 +323,7 @@
 		E740C7D41C41A3620048D302 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				E740C7F01C443CC10048D302 /* Semigroup.swift */,
 				E78A83AD1C33293E009C2425 /* Monoid.swift */,
 				E78A83AF1C332B1F009C2425 /* NumberType.swift */,
 				E78A83B61C3330D1009C2425 /* Orderable.swift */,
@@ -387,6 +397,7 @@
 				E7802DD01C41430700F747C3 /* OrderingSortTests.swift */,
 				E7BF440A1C41891000AD4581 /* DownTests.swift */,
 				E78A83C81C341BB2009C2425 /* NumberTypeTests.swift */,
+				E740C7EC1C443B6F0048D302 /* SemigroupTests.swift */,
 				E78A83C11C33DDD8009C2425 /* ArrayMonoidTests.swift */,
 				E740C7E41C42E9CF0048D302 /* SetMonoidTests.swift */,
 				E78A83C31C33E209009C2425 /* StringMonoidTests.swift */,
@@ -710,6 +721,7 @@
 				E7802CF31C3FD96F00F747C3 /* SumMonoid.swift in Sources */,
 				E7802DA51C3FFEDC00F747C3 /* LastMonoid.swift in Sources */,
 				E7802CF41C3FD96F00F747C3 /* NumberType.swift in Sources */,
+				E740C7F21C443CC10048D302 /* Semigroup.swift in Sources */,
 				E7802DCD1C41300000F747C3 /* Ordering.swift in Sources */,
 				E7802CF51C3FD96F00F747C3 /* ArrayMonoid.swift in Sources */,
 				E740C7D71C41A4A40048D302 /* NumberTypeInstances.swift in Sources */,
@@ -754,6 +766,7 @@
 				E7802DC91C4124F000F747C3 /* EndoMonoidTests.swift in Sources */,
 				E7802DAE1C40043800F747C3 /* LastMonoidTests.swift in Sources */,
 				E7802D311C3FDC7900F747C3 /* SumMonoidTests.swift in Sources */,
+				E740C7EE1C443B6F0048D302 /* SemigroupTests.swift in Sources */,
 				E7802D321C3FDC7900F747C3 /* ProductMonoidTests.swift in Sources */,
 				E7BF440C1C41891000AD4581 /* DownTests.swift in Sources */,
 			);
@@ -766,6 +779,7 @@
 				E7802D4D1C3FDF3800F747C3 /* SumMonoid.swift in Sources */,
 				E7802DA61C3FFEDC00F747C3 /* LastMonoid.swift in Sources */,
 				E7802D4E1C3FDF3800F747C3 /* NumberType.swift in Sources */,
+				E740C7F31C443CC10048D302 /* Semigroup.swift in Sources */,
 				E7802DCE1C41300000F747C3 /* Ordering.swift in Sources */,
 				E7802D4F1C3FDF3800F747C3 /* ArrayMonoid.swift in Sources */,
 				E740C7D81C41A4A40048D302 /* NumberTypeInstances.swift in Sources */,
@@ -797,6 +811,7 @@
 				E7802D621C3FE16700F747C3 /* SumMonoid.swift in Sources */,
 				E7802DA71C3FFEDC00F747C3 /* LastMonoid.swift in Sources */,
 				E7802D631C3FE16700F747C3 /* NumberType.swift in Sources */,
+				E740C7F41C443CC10048D302 /* Semigroup.swift in Sources */,
 				E7802DCF1C41300000F747C3 /* Ordering.swift in Sources */,
 				E7802D641C3FE16700F747C3 /* ArrayMonoid.swift in Sources */,
 				E740C7D91C41A4A40048D302 /* NumberTypeInstances.swift in Sources */,
@@ -841,6 +856,7 @@
 				E7802DCA1C4124F000F747C3 /* EndoMonoidTests.swift in Sources */,
 				E7802DAF1C40043800F747C3 /* LastMonoidTests.swift in Sources */,
 				E7802D8A1C3FE23500F747C3 /* SumMonoidTests.swift in Sources */,
+				E740C7EF1C443B6F0048D302 /* SemigroupTests.swift in Sources */,
 				E7802D8B1C3FE23500F747C3 /* ProductMonoidTests.swift in Sources */,
 				E7BF440D1C41891000AD4581 /* DownTests.swift in Sources */,
 			);
@@ -853,6 +869,7 @@
 				E7802CEE1C3FD31800F747C3 /* SumMonoid.swift in Sources */,
 				E7802DA41C3FFEDB00F747C3 /* LastMonoid.swift in Sources */,
 				E78A83B01C332B1F009C2425 /* NumberType.swift in Sources */,
+				E740C7F11C443CC10048D302 /* Semigroup.swift in Sources */,
 				E7802DCC1C41300000F747C3 /* Ordering.swift in Sources */,
 				E7802CE71C3FD1D400F747C3 /* ArrayMonoid.swift in Sources */,
 				E740C7D61C41A4A40048D302 /* NumberTypeInstances.swift in Sources */,
@@ -897,6 +914,7 @@
 				E7802DC81C4124F000F747C3 /* EndoMonoidTests.swift in Sources */,
 				E7802DAD1C40043800F747C3 /* LastMonoidTests.swift in Sources */,
 				E78A83C91C341BB2009C2425 /* NumberTypeTests.swift in Sources */,
+				E740C7ED1C443B6F0048D302 /* SemigroupTests.swift in Sources */,
 				E78A83C01C33DA8F009C2425 /* OrderingMonoidTests.swift in Sources */,
 				E7BF440B1C41891000AD4581 /* DownTests.swift in Sources */,
 			);
