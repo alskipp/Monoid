@@ -55,7 +55,9 @@ extension Float: NumberType {
   public static var one: Float { return 1.0 }
 }
 
+#if arch(x86_64) || arch(i386)
 extension Float80: NumberType {
   public static var zero: Float80 { return 0.0 }
   public static var one: Float80 { return 1.0 }
 }
+#endif

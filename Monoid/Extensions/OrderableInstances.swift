@@ -15,8 +15,10 @@ extension UInt8: Orderable {}
 
 extension Double: Orderable {}
 extension Float: Orderable {}
-extension Float80: Orderable {}
 
+#if arch(x86_64) || arch(i386)
+extension Float80: Orderable {}
+#endif
 
 extension Bool: Comparable, Orderable {}
 
