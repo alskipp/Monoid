@@ -1,5 +1,7 @@
 # Monoid
 
+[![Build Status](https://travis-ci.org/alskipp/Monoid.svg?branch=master)](https://travis-ci.org/alskipp/Monoid)
+
 An implementation of Monoids in Swift. I'll add more explanation at some point, but for now, let's jump straight to a practical example: Sorting.
 
 Take a look at the data structure below. (If you're keen to test out the code, there's a Playground included with the project).
