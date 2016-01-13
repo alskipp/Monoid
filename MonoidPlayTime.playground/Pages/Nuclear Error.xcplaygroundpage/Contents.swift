@@ -47,3 +47,4 @@ let statusReport: [CoreStatus] = [
 //: Combine the full status report into a single, definitive **CoreStatus** message
 CoreStatus.mconcat(statusReport)
 
+//: [**Next page ->** (Anarcho-Syndicalist-Commune-Monoid)](@next)
