@@ -1,6 +1,8 @@
 # Monoid
 
 [![Build Status](https://travis-ci.org/alskipp/Monoid.svg?branch=master)](https://travis-ci.org/alskipp/Monoid)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift 2.1](https://img.shields.io/badge/Swift-2.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 An implementation of Monoids in Swift. I'll add more explanation at some point, but for now, let's jump straight to a practical example: Sorting.
 
