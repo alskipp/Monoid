@@ -18,37 +18,37 @@ func < (x: Foo, y: Foo) -> Bool {
 class OrderableTests: XCTestCase {
 
   func testOrderableOrdering() {
-    XCTAssert(Ordering.lt.compare(.lt) == .eq)
-    XCTAssert(Ordering.lt.compare(.gt) == .lt)
-    XCTAssert(Ordering.lt.compare(.eq) == .lt)
+    XCTAssert(Ordering.less.compare(.less) == .equal)
+    XCTAssert(Ordering.less.compare(.greater) == .less)
+    XCTAssert(Ordering.less.compare(.equal) == .less)
 
-    XCTAssert(Ordering.eq.compare(.lt) == .gt)
-    XCTAssert(Ordering.eq.compare(.eq) == .eq)
-    XCTAssert(Ordering.eq.compare(.gt) == .lt)
+    XCTAssert(Ordering.equal.compare(.less) == .greater)
+    XCTAssert(Ordering.equal.compare(.equal) == .equal)
+    XCTAssert(Ordering.equal.compare(.greater) == .less)
 
-    XCTAssert(Ordering.gt.compare(.lt) == .gt)
-    XCTAssert(Ordering.gt.compare(.eq) == .gt)
-    XCTAssert(Ordering.gt.compare(.gt) == .eq)
+    XCTAssert(Ordering.greater.compare(.less) == .greater)
+    XCTAssert(Ordering.greater.compare(.equal) == .greater)
+    XCTAssert(Ordering.greater.compare(.greater) == .equal)
   }
 
   func testFooOrderableCompare() {
-    XCTAssert(Foo.a.compare(Foo.a) == .eq)
-    XCTAssert(Foo.b.compare(Foo.b) == .eq)
-    XCTAssert(Foo.c.compare(Foo.c) == .eq)
+    XCTAssert(Foo.a.compare(Foo.a) == .equal)
+    XCTAssert(Foo.b.compare(Foo.b) == .equal)
+    XCTAssert(Foo.c.compare(Foo.c) == .equal)
 
-    XCTAssert(Foo.a.compare(Foo.b) == .lt)
-    XCTAssert(Foo.a.compare(Foo.c) == .lt)
-    XCTAssert(Foo.b.compare(Foo.c) == .lt)
+    XCTAssert(Foo.a.compare(Foo.b) == .less)
+    XCTAssert(Foo.a.compare(Foo.c) == .less)
+    XCTAssert(Foo.b.compare(Foo.c) == .less)
 
-    XCTAssert(Foo.b.compare(Foo.a) == .gt)
-    XCTAssert(Foo.c.compare(Foo.a) == .gt)
-    XCTAssert(Foo.c.compare(Foo.b) == .gt)
+    XCTAssert(Foo.b.compare(Foo.a) == .greater)
+    XCTAssert(Foo.c.compare(Foo.a) == .greater)
+    XCTAssert(Foo.c.compare(Foo.b) == .greater)
   }
 
   func testBoolCompare() {
-    XCTAssert(false.compare(true) == .lt)
-    XCTAssert(false.compare(false) == .eq)
-    XCTAssert(true.compare(false) == .gt)
+    XCTAssert(false.compare(true) == .less)
+    XCTAssert(false.compare(false) == .equal)
+    XCTAssert(true.compare(false) == .greater)
   }
   
 }

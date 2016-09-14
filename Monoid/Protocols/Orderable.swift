@@ -6,8 +6,8 @@ public protocol Orderable: Comparable {
 
 public extension Orderable {
   func compare(_ other: Self) -> Ordering {
-    if self == other { return .eq }
-    if self < other { return .lt }
-    return .gt
+    if self == other { return .equal }
+    if self < other { return .less }
+    return .greater
   }
 }

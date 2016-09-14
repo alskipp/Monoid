@@ -6,35 +6,35 @@ import Monoid
 class OrderingMonoidTests: XCTestCase {
 
   func testMempty() {
-    XCTAssertTrue(Ordering.mempty == .eq)
+    XCTAssertTrue(Ordering.mempty == .equal)
   }
 
   func testMappend() {
-    XCTAssertTrue(.eq <> .eq <> .eq == .eq)
-    XCTAssertTrue(.eq <> .eq <> .lt == .lt)
-    XCTAssertTrue(.eq <> .eq <> .gt == .gt)
+    XCTAssertTrue(.equal <> .equal <> .equal == .equal)
+    XCTAssertTrue(.equal <> .equal <> .less == .less)
+    XCTAssertTrue(.equal <> .equal <> .greater == .greater)
 
-    XCTAssertTrue(.eq <> .lt <> .eq == .lt)
-    XCTAssertTrue(.eq <> .lt <> .gt == .lt)
-    XCTAssertTrue(.lt <> .gt <> .gt == .lt)
+    XCTAssertTrue(.equal <> .less <> .equal == .less)
+    XCTAssertTrue(.equal <> .less <> .greater == .less)
+    XCTAssertTrue(.less <> .greater <> .greater == .less)
 
-    XCTAssertTrue(.gt <> .lt <> .eq == .gt)
-    XCTAssertTrue(.eq <> .gt <> .lt == .gt)
-    XCTAssertTrue(.eq <> .gt <> .eq == .gt)
+    XCTAssertTrue(.greater <> .less <> .equal == .greater)
+    XCTAssertTrue(.equal <> .greater <> .less == .greater)
+    XCTAssertTrue(.equal <> .greater <> .equal == .greater)
   }
 
   func testMconcat() {
-    XCTAssertTrue(.mconcat([.eq, .eq, .eq]) == .eq)
-    XCTAssertTrue(.mconcat([.eq, .eq, .lt]) == .lt)
-    XCTAssertTrue(.mconcat([.eq, .eq, .gt]) == .gt)
+    XCTAssertTrue(.mconcat([.equal, .equal, .equal]) == .equal)
+    XCTAssertTrue(.mconcat([.equal, .equal, .less]) == .less)
+    XCTAssertTrue(.mconcat([.equal, .equal, .greater]) == .greater)
 
-    XCTAssertTrue(.mconcat([.eq, .lt, .eq]) == .lt)
-    XCTAssertTrue(.mconcat([.eq, .lt, .gt]) == .lt)
-    XCTAssertTrue(.mconcat([.lt, .gt, .gt]) == .lt)
+    XCTAssertTrue(.mconcat([.equal, .less, .equal]) == .less)
+    XCTAssertTrue(.mconcat([.equal, .less, .greater]) == .less)
+    XCTAssertTrue(.mconcat([.less, .greater, .greater]) == .less)
 
-    XCTAssertTrue(.mconcat([.gt, .lt, .eq]) == .gt)
-    XCTAssertTrue(.mconcat([.eq, .gt, .lt]) == .gt)
-    XCTAssertTrue(.mconcat([.eq, .gt, .eq]) == .gt)
+    XCTAssertTrue(.mconcat([.greater, .less, .equal]) == .greater)
+    XCTAssertTrue(.mconcat([.equal, .greater, .less]) == .greater)
+    XCTAssertTrue(.mconcat([.equal, .greater, .equal]) == .greater)
   }
   
 }
