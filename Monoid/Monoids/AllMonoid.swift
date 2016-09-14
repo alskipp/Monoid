@@ -10,7 +10,7 @@ extension All: Monoid {
     return All(true)
   }
 
-  public static func combine(a: All, _ b: All) -> All {
+  public static func combine(_ a: All, _ b: All) -> All {
     return All(a.value && b.value)
   }
 }
@@ -21,12 +21,12 @@ extension All: CustomStringConvertible {
   }
 }
 
-extension All: Equatable, Comparable, Orderable {}
+extension All: Equatable, Comparable, Orderable {
+  public static func == (x: All, y: All) -> Bool {
+    return x.value == y.value
+  }
 
-public func == (x: All, y: All) -> Bool {
-  return x.value == y.value
-}
-
-public func < (x: All, y: All) -> Bool {
-  return x.value < y.value
+  public static func < (x: All, y: All) -> Bool {
+    return x.value < y.value
+  }
 }

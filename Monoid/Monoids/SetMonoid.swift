@@ -5,14 +5,14 @@ extension Set: Monoid {
     return Set()
   }
 
-  public static func combine(a: Set, _ b: Set) -> Set {
+  public static func combine(_ a: Set, _ b: Set) -> Set {
     return a.union(b)
   }
 
   // Using a mutable Set to improve performance
-  public static func mconcat(a: [Set]) -> Set {
+  public static func mconcat(_ a: [Set]) -> Set {
     var result = Set()
-    a.forEach { e in result.unionInPlace(e) }
+    a.forEach { e in result.formUnion(e) }
     return result
   }
 }

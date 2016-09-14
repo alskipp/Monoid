@@ -6,7 +6,7 @@ import Monoid
 class ArrayMonoidTests: XCTestCase {
 
   func testMempty() {
-    XCTAssertTrue(Array<[Int]>.mempty == [])
+    XCTAssertTrue(Array<Int>.mempty == [])
   }
 
   func testMappend() {
@@ -40,19 +40,19 @@ class ArrayMonoidTests: XCTestCase {
   }
 
   func test_single_element_Array_mconcat_Performance() {
-    let nestedArray = Array(count: 25_000, repeatedValue: [1])
+    let nestedArray = Array(repeating: [1], count: 25_000)
 
-    self.measureBlock {
-      Array.mconcat(nestedArray)
+    self.measure {
+      _ = Array.mconcat(nestedArray)
     }
   }
 
   func test_large_Array_mconcat_Performance() {
-    let arr = Array(count: 100_000, repeatedValue: 1)
-    let nestedArray = Array(count: 10, repeatedValue: arr)
+    let arr = Array(repeating: 1, count: 100_000)
+    let nestedArray = Array(repeating: arr, count: 10)
 
-    self.measureBlock {
-      Array.mconcat(nestedArray)
+    self.measure {
+      _ = Array.mconcat(nestedArray)
     }
   }
   

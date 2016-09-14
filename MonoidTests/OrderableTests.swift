@@ -5,12 +5,12 @@ import Monoid
 
 // Ensure `Orderable` protocol conformance gives correct implementation of `compare` function.
 
-enum Foo: Equatable, Comparable, Orderable { case A, B, C }
+enum Foo: Equatable, Comparable, Orderable { case a, b, c }
 
 // `Comparable` must be defined manually
 func < (x: Foo, y: Foo) -> Bool {
   switch (x, y) {
-  case (.A, .B), (.A, .C), (.B, .C): return true
+  case (.a, .b), (.a, .c), (.b, .c): return true
   default: return false
   }
 }
@@ -18,37 +18,37 @@ func < (x: Foo, y: Foo) -> Bool {
 class OrderableTests: XCTestCase {
 
   func testOrderableOrdering() {
-    XCTAssert(Ordering.LT.compare(.LT) == .EQ)
-    XCTAssert(Ordering.LT.compare(.GT) == .LT)
-    XCTAssert(Ordering.LT.compare(.EQ) == .LT)
+    XCTAssert(Ordering.lt.compare(.lt) == .eq)
+    XCTAssert(Ordering.lt.compare(.gt) == .lt)
+    XCTAssert(Ordering.lt.compare(.eq) == .lt)
 
-    XCTAssert(Ordering.EQ.compare(.LT) == .GT)
-    XCTAssert(Ordering.EQ.compare(.EQ) == .EQ)
-    XCTAssert(Ordering.EQ.compare(.GT) == .LT)
+    XCTAssert(Ordering.eq.compare(.lt) == .gt)
+    XCTAssert(Ordering.eq.compare(.eq) == .eq)
+    XCTAssert(Ordering.eq.compare(.gt) == .lt)
 
-    XCTAssert(Ordering.GT.compare(.LT) == .GT)
-    XCTAssert(Ordering.GT.compare(.EQ) == .GT)
-    XCTAssert(Ordering.GT.compare(.GT) == .EQ)
+    XCTAssert(Ordering.gt.compare(.lt) == .gt)
+    XCTAssert(Ordering.gt.compare(.eq) == .gt)
+    XCTAssert(Ordering.gt.compare(.gt) == .eq)
   }
 
   func testFooOrderableCompare() {
-    XCTAssert(Foo.A.compare(Foo.A) == .EQ)
-    XCTAssert(Foo.B.compare(Foo.B) == .EQ)
-    XCTAssert(Foo.C.compare(Foo.C) == .EQ)
+    XCTAssert(Foo.a.compare(Foo.a) == .eq)
+    XCTAssert(Foo.b.compare(Foo.b) == .eq)
+    XCTAssert(Foo.c.compare(Foo.c) == .eq)
 
-    XCTAssert(Foo.A.compare(Foo.B) == .LT)
-    XCTAssert(Foo.A.compare(Foo.C) == .LT)
-    XCTAssert(Foo.B.compare(Foo.C) == .LT)
+    XCTAssert(Foo.a.compare(Foo.b) == .lt)
+    XCTAssert(Foo.a.compare(Foo.c) == .lt)
+    XCTAssert(Foo.b.compare(Foo.c) == .lt)
 
-    XCTAssert(Foo.B.compare(Foo.A) == .GT)
-    XCTAssert(Foo.C.compare(Foo.A) == .GT)
-    XCTAssert(Foo.C.compare(Foo.B) == .GT)
+    XCTAssert(Foo.b.compare(Foo.a) == .gt)
+    XCTAssert(Foo.c.compare(Foo.a) == .gt)
+    XCTAssert(Foo.c.compare(Foo.b) == .gt)
   }
 
   func testBoolCompare() {
-    XCTAssert(false.compare(true) == .LT)
-    XCTAssert(false.compare(false) == .EQ)
-    XCTAssert(true.compare(false) == .GT)
+    XCTAssert(false.compare(true) == .lt)
+    XCTAssert(false.compare(false) == .eq)
+    XCTAssert(true.compare(false) == .gt)
   }
   
 }

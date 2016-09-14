@@ -2,11 +2,11 @@
 
 public protocol Monoid: Semigroup {
   static var mempty: Self { get }
-  static func mconcat(a: [Self]) -> Self
+  static func mconcat(_ a: [Self]) -> Self
 }
 
 public extension Monoid {
-  static func mconcat(xs: [Self]) -> Self {
+  static func mconcat(_ xs: [Self]) -> Self {
     return .sconcat(mempty, xs)
   }
 }

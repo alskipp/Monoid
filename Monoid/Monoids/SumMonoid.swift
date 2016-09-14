@@ -10,7 +10,7 @@ extension Sum: Monoid {
     return Sum(T.zero)
   }
 
-  public static func combine(a: Sum, _ b: Sum) -> Sum {
+  public static func combine(_ a: Sum, _ b: Sum) -> Sum {
     return Sum(a.value + b.value)
   }
 }
@@ -21,12 +21,12 @@ extension Sum: CustomStringConvertible {
   }
 }
 
-extension Sum: Equatable, Comparable, Orderable {}
+extension Sum: Equatable, Comparable, Orderable {
+  public static func == <N: NumberType>(x: Sum<N>, y: Sum<N>) -> Bool {
+    return x.value == y.value
+  }
 
-public func == <N: NumberType>(x: Sum<N>, y: Sum<N>) -> Bool {
-  return x.value == y.value
-}
-
-public func < <N: NumberType>(x: Sum<N>, y: Sum<N>) -> Bool {
-  return x.value < y.value
+  public static func < <N: NumberType>(x: Sum<N>, y: Sum<N>) -> Bool {
+    return x.value < y.value
+  }
 }

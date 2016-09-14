@@ -98,16 +98,16 @@
 		E7802D8E1C3FF10100F747C3 /* AllMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D8C1C3FF10100F747C3 /* AllMonoid.swift */; };
 		E7802D8F1C3FF10100F747C3 /* AllMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D8C1C3FF10100F747C3 /* AllMonoid.swift */; };
 		E7802D901C3FF10100F747C3 /* AllMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D8C1C3FF10100F747C3 /* AllMonoid.swift */; };
-		E7802D921C3FF14800F747C3 /* AnyMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D911C3FF14800F747C3 /* AnyMonoid.swift */; };
-		E7802D931C3FF14800F747C3 /* AnyMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D911C3FF14800F747C3 /* AnyMonoid.swift */; };
-		E7802D941C3FF14800F747C3 /* AnyMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D911C3FF14800F747C3 /* AnyMonoid.swift */; };
-		E7802D951C3FF14800F747C3 /* AnyMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D911C3FF14800F747C3 /* AnyMonoid.swift */; };
+		E7802D921C3FF14800F747C3 /* AnyOfMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D911C3FF14800F747C3 /* AnyOfMonoid.swift */; };
+		E7802D931C3FF14800F747C3 /* AnyOfMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D911C3FF14800F747C3 /* AnyOfMonoid.swift */; };
+		E7802D941C3FF14800F747C3 /* AnyOfMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D911C3FF14800F747C3 /* AnyOfMonoid.swift */; };
+		E7802D951C3FF14800F747C3 /* AnyOfMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D911C3FF14800F747C3 /* AnyOfMonoid.swift */; };
 		E7802D971C3FF49300F747C3 /* AllMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D961C3FF49300F747C3 /* AllMonoidTests.swift */; };
 		E7802D981C3FF49300F747C3 /* AllMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D961C3FF49300F747C3 /* AllMonoidTests.swift */; };
 		E7802D991C3FF49300F747C3 /* AllMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D961C3FF49300F747C3 /* AllMonoidTests.swift */; };
-		E7802D9B1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9A1C3FF9AF00F747C3 /* AnyMonoidTests.swift */; };
-		E7802D9C1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9A1C3FF9AF00F747C3 /* AnyMonoidTests.swift */; };
-		E7802D9D1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9A1C3FF9AF00F747C3 /* AnyMonoidTests.swift */; };
+		E7802D9B1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9A1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift */; };
+		E7802D9C1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9A1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift */; };
+		E7802D9D1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9A1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift */; };
 		E7802D9F1C3FFE8500F747C3 /* FirstMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9E1C3FFE8500F747C3 /* FirstMonoid.swift */; };
 		E7802DA01C3FFE8500F747C3 /* FirstMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9E1C3FFE8500F747C3 /* FirstMonoid.swift */; };
 		E7802DA11C3FFE8500F747C3 /* FirstMonoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7802D9E1C3FFE8500F747C3 /* FirstMonoid.swift */; };
@@ -218,9 +218,9 @@
 		E7802D731C3FE16700F747C3 /* Monoid.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Monoid.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7802D791C3FE20E00F747C3 /* MonoidTests-TVOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MonoidTests-TVOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7802D8C1C3FF10100F747C3 /* AllMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllMonoid.swift; path = Monoids/AllMonoid.swift; sourceTree = "<group>"; };
-		E7802D911C3FF14800F747C3 /* AnyMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyMonoid.swift; path = Monoids/AnyMonoid.swift; sourceTree = "<group>"; };
+		E7802D911C3FF14800F747C3 /* AnyOfMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyOfMonoid.swift; path = Monoids/AnyOfMonoid.swift; sourceTree = "<group>"; };
 		E7802D961C3FF49300F747C3 /* AllMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllMonoidTests.swift; sourceTree = "<group>"; };
-		E7802D9A1C3FF9AF00F747C3 /* AnyMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyMonoidTests.swift; sourceTree = "<group>"; };
+		E7802D9A1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyOfMonoidTests.swift; sourceTree = "<group>"; };
 		E7802D9E1C3FFE8500F747C3 /* FirstMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstMonoid.swift; path = Monoids/FirstMonoid.swift; sourceTree = "<group>"; };
 		E7802DA31C3FFEDB00F747C3 /* LastMonoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LastMonoid.swift; path = Monoids/LastMonoid.swift; sourceTree = "<group>"; };
 		E7802DA81C40011600F747C3 /* FirstMonoidTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstMonoidTests.swift; sourceTree = "<group>"; };
@@ -341,7 +341,7 @@
 				E7802CED1C3FD31800F747C3 /* SumMonoid.swift */,
 				E7802CEF1C3FD34400F747C3 /* ProductMonoid.swift */,
 				E7802D8C1C3FF10100F747C3 /* AllMonoid.swift */,
-				E7802D911C3FF14800F747C3 /* AnyMonoid.swift */,
+				E7802D911C3FF14800F747C3 /* AnyOfMonoid.swift */,
 				E7802D9E1C3FFE8500F747C3 /* FirstMonoid.swift */,
 				E7802DA31C3FFEDB00F747C3 /* LastMonoid.swift */,
 				E7802DB01C40093E00F747C3 /* MinMonoid.swift */,
@@ -404,7 +404,7 @@
 				E79F03281C34575800ECA921 /* SumMonoidTests.swift */,
 				E7802CE41C3FCDFC00F747C3 /* ProductMonoidTests.swift */,
 				E7802D961C3FF49300F747C3 /* AllMonoidTests.swift */,
-				E7802D9A1C3FF9AF00F747C3 /* AnyMonoidTests.swift */,
+				E7802D9A1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift */,
 				E7802DA81C40011600F747C3 /* FirstMonoidTests.swift */,
 				E7802DAC1C40043800F747C3 /* LastMonoidTests.swift */,
 				E7802DBA1C4014C100F747C3 /* MinMonoidTests.swift */,
@@ -621,7 +621,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Al Skipp";
 				TargetAttributes = {
 					E7802D1F1C3FDC5200F747C3 = {
@@ -632,9 +632,11 @@
 					};
 					E78A83921C332786009C2425 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					E78A839C1C332786009C2425 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -734,7 +736,7 @@
 				E740C7E11C42E9280048D302 /* SetMonoid.swift in Sources */,
 				E7802DB21C40093E00F747C3 /* MinMonoid.swift in Sources */,
 				E7802CFA1C3FD96F00F747C3 /* mappend.swift in Sources */,
-				E7802D931C3FF14800F747C3 /* AnyMonoid.swift in Sources */,
+				E7802D931C3FF14800F747C3 /* AnyOfMonoid.swift in Sources */,
 				E7802CFB1C3FD96F00F747C3 /* OrderingMonoid.swift in Sources */,
 				E740C7CB1C41A1300048D302 /* comparing.swift in Sources */,
 				E7802DA01C3FFE8500F747C3 /* FirstMonoid.swift in Sources */,
@@ -753,7 +755,7 @@
 				E740C7E61C42E9CF0048D302 /* SetMonoidTests.swift in Sources */,
 				E7802D2B1C3FDC7900F747C3 /* OrderableTests.swift in Sources */,
 				E7802D2C1C3FDC7900F747C3 /* OrderingTests.swift in Sources */,
-				E7802D9C1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */,
+				E7802D9C1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift in Sources */,
 				E7802DBC1C4014C100F747C3 /* MinMonoidTests.swift in Sources */,
 				E7802D981C3FF49300F747C3 /* AllMonoidTests.swift in Sources */,
 				E7802D2D1C3FDC7900F747C3 /* NumberTypeTests.swift in Sources */,
@@ -792,7 +794,7 @@
 				E740C7E21C42E9280048D302 /* SetMonoid.swift in Sources */,
 				E7802DB31C40093E00F747C3 /* MinMonoid.swift in Sources */,
 				E7802D541C3FDF3800F747C3 /* mappend.swift in Sources */,
-				E7802D941C3FF14800F747C3 /* AnyMonoid.swift in Sources */,
+				E7802D941C3FF14800F747C3 /* AnyOfMonoid.swift in Sources */,
 				E7802D551C3FDF3800F747C3 /* OrderingMonoid.swift in Sources */,
 				E740C7CC1C41A1300048D302 /* comparing.swift in Sources */,
 				E7802DA11C3FFE8500F747C3 /* FirstMonoid.swift in Sources */,
@@ -824,7 +826,7 @@
 				E740C7E31C42E9280048D302 /* SetMonoid.swift in Sources */,
 				E7802DB41C40093E00F747C3 /* MinMonoid.swift in Sources */,
 				E7802D691C3FE16700F747C3 /* mappend.swift in Sources */,
-				E7802D951C3FF14800F747C3 /* AnyMonoid.swift in Sources */,
+				E7802D951C3FF14800F747C3 /* AnyOfMonoid.swift in Sources */,
 				E7802D6A1C3FE16700F747C3 /* OrderingMonoid.swift in Sources */,
 				E740C7CD1C41A1300048D302 /* comparing.swift in Sources */,
 				E7802DA21C3FFE8500F747C3 /* FirstMonoid.swift in Sources */,
@@ -843,7 +845,7 @@
 				E740C7E71C42E9CF0048D302 /* SetMonoidTests.swift in Sources */,
 				E7802D841C3FE23500F747C3 /* OrderableTests.swift in Sources */,
 				E7802D851C3FE23500F747C3 /* OrderingTests.swift in Sources */,
-				E7802D9D1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */,
+				E7802D9D1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift in Sources */,
 				E7802DBD1C4014C100F747C3 /* MinMonoidTests.swift in Sources */,
 				E7802D991C3FF49300F747C3 /* AllMonoidTests.swift in Sources */,
 				E7802D861C3FE23500F747C3 /* NumberTypeTests.swift in Sources */,
@@ -882,7 +884,7 @@
 				E740C7E01C42E9280048D302 /* SetMonoid.swift in Sources */,
 				E7802DB11C40093E00F747C3 /* MinMonoid.swift in Sources */,
 				E78A83B91C333246009C2425 /* mappend.swift in Sources */,
-				E7802D921C3FF14800F747C3 /* AnyMonoid.swift in Sources */,
+				E7802D921C3FF14800F747C3 /* AnyOfMonoid.swift in Sources */,
 				E7802CEC1C3FD29600F747C3 /* OrderingMonoid.swift in Sources */,
 				E740C7CA1C41A1300048D302 /* comparing.swift in Sources */,
 				E7802D9F1C3FFE8500F747C3 /* FirstMonoid.swift in Sources */,
@@ -901,7 +903,7 @@
 				E740C7E51C42E9CF0048D302 /* SetMonoidTests.swift in Sources */,
 				E78A83BE1C333B6C009C2425 /* OrderableTests.swift in Sources */,
 				E79F03291C34575800ECA921 /* SumMonoidTests.swift in Sources */,
-				E7802D9B1C3FF9AF00F747C3 /* AnyMonoidTests.swift in Sources */,
+				E7802D9B1C3FF9AF00F747C3 /* AnyOfMonoidTests.swift in Sources */,
 				E7802DBB1C4014C100F747C3 /* MinMonoidTests.swift in Sources */,
 				E7802D971C3FF49300F747C3 /* AllMonoidTests.swift in Sources */,
 				E78A83C21C33DDD8009C2425 /* ArrayMonoidTests.swift in Sources */,
@@ -1141,8 +1143,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1188,8 +1192,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
@@ -1209,6 +1215,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1232,6 +1239,7 @@
 				PRODUCT_NAME = Monoid;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1252,6 +1260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.alskipp.Monoid;
 				PRODUCT_NAME = Monoid;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -1264,6 +1273,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alskipp.MonoidTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -1276,6 +1286,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alskipp.MonoidTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

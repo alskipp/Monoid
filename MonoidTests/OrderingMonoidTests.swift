@@ -6,35 +6,35 @@ import Monoid
 class OrderingMonoidTests: XCTestCase {
 
   func testMempty() {
-    XCTAssertTrue(Ordering.mempty == .EQ)
+    XCTAssertTrue(Ordering.mempty == .eq)
   }
 
   func testMappend() {
-    XCTAssertTrue(.EQ <> .EQ <> .EQ == .EQ)
-    XCTAssertTrue(.EQ <> .EQ <> .LT == .LT)
-    XCTAssertTrue(.EQ <> .EQ <> .GT == .GT)
+    XCTAssertTrue(.eq <> .eq <> .eq == .eq)
+    XCTAssertTrue(.eq <> .eq <> .lt == .lt)
+    XCTAssertTrue(.eq <> .eq <> .gt == .gt)
 
-    XCTAssertTrue(.EQ <> .LT <> .EQ == .LT)
-    XCTAssertTrue(.EQ <> .LT <> .GT == .LT)
-    XCTAssertTrue(.LT <> .GT <> .GT == .LT)
+    XCTAssertTrue(.eq <> .lt <> .eq == .lt)
+    XCTAssertTrue(.eq <> .lt <> .gt == .lt)
+    XCTAssertTrue(.lt <> .gt <> .gt == .lt)
 
-    XCTAssertTrue(.GT <> .LT <> .EQ == .GT)
-    XCTAssertTrue(.EQ <> .GT <> .LT == .GT)
-    XCTAssertTrue(.EQ <> .GT <> .EQ == .GT)
+    XCTAssertTrue(.gt <> .lt <> .eq == .gt)
+    XCTAssertTrue(.eq <> .gt <> .lt == .gt)
+    XCTAssertTrue(.eq <> .gt <> .eq == .gt)
   }
 
   func testMconcat() {
-    XCTAssertTrue(.mconcat([.EQ, .EQ, .EQ]) == .EQ)
-    XCTAssertTrue(.mconcat([.EQ, .EQ, .LT]) == .LT)
-    XCTAssertTrue(.mconcat([.EQ, .EQ, .GT]) == .GT)
+    XCTAssertTrue(.mconcat([.eq, .eq, .eq]) == .eq)
+    XCTAssertTrue(.mconcat([.eq, .eq, .lt]) == .lt)
+    XCTAssertTrue(.mconcat([.eq, .eq, .gt]) == .gt)
 
-    XCTAssertTrue(.mconcat([.EQ, .LT, .EQ]) == .LT)
-    XCTAssertTrue(.mconcat([.EQ, .LT, .GT]) == .LT)
-    XCTAssertTrue(.mconcat([.LT, .GT, .GT]) == .LT)
+    XCTAssertTrue(.mconcat([.eq, .lt, .eq]) == .lt)
+    XCTAssertTrue(.mconcat([.eq, .lt, .gt]) == .lt)
+    XCTAssertTrue(.mconcat([.lt, .gt, .gt]) == .lt)
 
-    XCTAssertTrue(.mconcat([.GT, .LT, .EQ]) == .GT)
-    XCTAssertTrue(.mconcat([.EQ, .GT, .LT]) == .GT)
-    XCTAssertTrue(.mconcat([.EQ, .GT, .EQ]) == .GT)
+    XCTAssertTrue(.mconcat([.gt, .lt, .eq]) == .gt)
+    XCTAssertTrue(.mconcat([.eq, .gt, .lt]) == .gt)
+    XCTAssertTrue(.mconcat([.eq, .gt, .eq]) == .gt)
   }
   
 }

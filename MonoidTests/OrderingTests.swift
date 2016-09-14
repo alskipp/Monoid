@@ -6,22 +6,22 @@ import Monoid
 class OrderingTests: XCTestCase {
 
   func testOrderingIsComparable() {
-    XCTAssertTrue(Ordering.LT < Ordering.EQ)
-    XCTAssertTrue(Ordering.LT < Ordering.GT)
+    XCTAssertTrue(Ordering.lt < Ordering.eq)
+    XCTAssertTrue(Ordering.lt < Ordering.gt)
 
-    XCTAssertTrue(Ordering.EQ > Ordering.LT)
-    XCTAssertTrue(Ordering.EQ < Ordering.GT)
+    XCTAssertTrue(Ordering.eq > Ordering.lt)
+    XCTAssertTrue(Ordering.eq < Ordering.gt)
 
-    XCTAssertTrue(Ordering.GT > Ordering.LT)
-    XCTAssertTrue(Ordering.GT > Ordering.EQ)
+    XCTAssertTrue(Ordering.gt > Ordering.lt)
+    XCTAssertTrue(Ordering.gt > Ordering.eq)
 
-    XCTAssertFalse(Ordering.EQ > Ordering.EQ)
+    XCTAssertFalse(Ordering.eq > Ordering.eq)
   }
 
   func testOrderingIsEquatable() {
-    XCTAssertTrue(Ordering.EQ == Ordering.EQ)
-    XCTAssertTrue(Ordering.LT == Ordering.LT)
-    XCTAssertTrue(Ordering.GT == Ordering.GT)
+    XCTAssertTrue(Ordering.eq == Ordering.eq)
+    XCTAssertTrue(Ordering.lt == Ordering.lt)
+    XCTAssertTrue(Ordering.gt == Ordering.gt)
   }
   
 }

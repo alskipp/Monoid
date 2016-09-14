@@ -38,19 +38,19 @@ class StringMonoidTests: XCTestCase {
   }
 
   func test_single_CharString_mconcatPerformance() {
-    let stringArray = Array(count: 250_000, repeatedValue: "x")
+    let stringArray = Array(repeating: "x", count: 250_000)
 
-    self.measureBlock {
-      String.mconcat(stringArray)
+    self.measure {
+      _ = String.mconcat(stringArray)
     }
   }
 
   func test_large_string_mconcatPerformance() {
-    let s = Array(count: 100_000, repeatedValue: "x").joinWithSeparator("")
-    let strArr = Array(count: 50, repeatedValue: s)
+    let s = Array(repeating: "x", count: 100_000).joined(separator: "")
+    let strArr = Array(repeating: s, count: 50)
 
-    self.measureBlock {
-      String.mconcat(strArr)
+    self.measure {
+      _ = String.mconcat(strArr)
     }
   }
 }

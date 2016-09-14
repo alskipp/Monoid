@@ -24,10 +24,10 @@ class SetMonoidTests: XCTestCase {
   }
 
   func test_single_element_Set_mconcat_Performance() {
-    let sets = Array(count: 10_000, repeatedValue: Set<Int>([1]))
+    let sets = Array(repeating: Set<Int>([1]), count: 10_000)
 
-    self.measureBlock {
-      Set.mconcat(sets)
+    self.measure {
+      _ = Set.mconcat(sets)
     }
   }
 
@@ -39,8 +39,8 @@ class SetMonoidTests: XCTestCase {
 
     let sets = [set1, set2, set3, set4]
 
-    self.measureBlock {
-      Set.mconcat(sets)
+    self.measure {
+      _ = Set.mconcat(sets)
     }
   }
   

@@ -5,13 +5,13 @@ extension Array: Monoid {
     return []
   }
 
-  public static func combine(a: [Element], _ b: [Element]) -> [Element] {
+  public static func combine(_ a: [Element], _ b: [Element]) -> [Element] {
     return a + b
   }
 
   // The default mconcat has poor performance as it uses `reduce` to create an Array
   // Using a mutable [] and updating in a loop is significantly more performant
-  public static func mconcat(a: [[Element]]) -> [Element] {
+  public static func mconcat(_ a: [[Element]]) -> [Element] {
     var result: [Element] = []
     a.forEach { e in result += e }
     return result

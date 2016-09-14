@@ -7,10 +7,10 @@ public struct Min<Element: Comparable> {
 
 extension Min: Monoid {
   public static var mempty: Min {
-    return Min(.None)
+    return Min(.none)
   }
 
-  public static func combine(a: Min, _ b: Min) -> Min {
+  public static func combine(_ a: Min, _ b: Min) -> Min {
     return min(a, b)
   }
 }
@@ -22,17 +22,17 @@ extension Min: CustomStringConvertible {
   }
 }
 
-extension Min: Equatable, Comparable, Orderable {}
+extension Min: Equatable, Comparable, Orderable {
+  public static func == <T: Equatable>(x: Min<T>, y: Min<T>) -> Bool {
+    return x.value == y.value
+  }
 
-public func == <T: Equatable>(x: Min<T>, y: Min<T>) -> Bool {
-  return x.value == y.value
-}
-
-public func < <T: Comparable>(x: Min<T>, y: Min<T>) -> Bool {
-  switch (x.value, y.value) {
-  case (.None, .None): return false
-  case (.None, .Some): return false
-  case (.Some, .None): return true
-  case let (.Some(a), .Some(b)): return a < b
+  public static func < <T: Comparable>(x: Min<T>, y: Min<T>) -> Bool {
+    switch (x.value, y.value) {
+    case (.none, .none): return false
+    case (.none, .some): return false
+    case (.some, .none): return true
+    case let (.some(a), .some(b)): return a < b
+    }
   }
 }

@@ -6,20 +6,20 @@ import Monoid
 class FirstMonoidTests: XCTestCase {
 
   func testMempty() {
-    XCTAssertTrue(First<Int>.mempty.value == .None)
+    XCTAssertTrue(First<Int>.mempty.value == .none)
   }
 
   func testMappend() {
-    XCTAssertTrue(First("a") <> First(.None) <> First(.None) == First("a"))
-    XCTAssertTrue(First(.None) <> First("a") <> First("z") == First("a"))
-    XCTAssertTrue(First(.None) <> First(.None) <> First("z") == First("z"))
-    XCTAssertTrue(First(Optional<Int>.None) <> First(.None) <> First(.None) == First(.None))
+    XCTAssertTrue(First("a") <> First(.none) <> First(.none) == First("a"))
+    XCTAssertTrue(First(.none) <> First("a") <> First("z") == First("a"))
+    XCTAssertTrue(First(.none) <> First(.none) <> First("z") == First("z"))
+    XCTAssertTrue(First(Optional<Int>.none) <> First(.none) <> First(.none) == First(.none))
   }
 
   func testMconcat() {
-    XCTAssertTrue(.mconcat([First("a"), First(.None), First(.None)]) == First("a"))
-    XCTAssertTrue(.mconcat([First(.None), First("a"), First("z")]) == First("a"))
-    XCTAssertTrue(.mconcat([First(Optional<Int>.None), First(.None), First(.None)]) == First(.None))
+    XCTAssertTrue(.mconcat([First("a"), First(.none), First(.none)]) == First("a"))
+    XCTAssertTrue(.mconcat([First(.none), First("a"), First("z")]) == First("a"))
+    XCTAssertTrue(.mconcat([First(Optional<Int>.none), First(.none), First(.none)]) == First(.none))
   }
 
   func testDescription() {

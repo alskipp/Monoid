@@ -7,10 +7,10 @@ public struct First<T> {
 
 extension First: Monoid {
   public static var mempty: First {
-    return First(.None)
+    return First(.none)
   }
 
-  public static func combine(a: First, _ b: First) -> First {
+  public static func combine(_ a: First, _ b: First) -> First {
     return a.value.map { _ in a } ?? b
   }
 }

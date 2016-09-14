@@ -10,7 +10,7 @@ It's equivalent too:
 
   items.sort { $0.property < $1.property }
 */
-public func comparing<A, B: Orderable>(property: A -> B) -> (A, A) -> Ordering {
+public func comparing<A, B: Orderable>(_ property: @escaping (A) -> B) -> (A, A) -> Ordering {
   return { x, y in property(x).compare(property(y)) }
 }
 
@@ -24,6 +24,6 @@ Reads better when comparing several properties using the Ordering Monoid instanc
     comparing(x, y) { $0.property3 }
   }
 */
-public func comparing<A, B: Orderable>(x: A, _ y: A, property: A -> B) -> Ordering {
+public func comparing<A, B: Orderable>(_ x: A, _ y: A, property: (A) -> B) -> Ordering {
   return property(x).compare(property(y))
 }

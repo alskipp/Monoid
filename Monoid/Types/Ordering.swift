@@ -1,12 +1,12 @@
 //  Copyright © 2016 Al Skipp. All rights reserved.
 
 public enum Ordering: Equatable, Comparable, Orderable {
-  case LT, EQ, GT
+  case lt, eq, gt
 }
 
 public func < (x: Ordering, y: Ordering) -> Bool {
   switch (x, y) {
-  case (.LT, .EQ), (.LT, .GT), (.EQ, .GT): return true
+  case (.lt, .eq), (.lt, .gt), (.eq, .gt): return true
   default: return false
   }
 }

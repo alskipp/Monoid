@@ -3,8 +3,8 @@
 
 // Extension to allow sort by **Ordering**
 
-public extension SequenceType {
-  func sortBy(@noescape f: (Generator.Element, Generator.Element) -> Ordering) -> [Generator.Element] {
-    return sort { f($0, $1) == .LT }
+public extension Sequence {
+  func sortBy(_ f: (Iterator.Element, Iterator.Element) -> Ordering) -> [Iterator.Element] {
+    return sorted { f($0, $1) == .lt }
   }
 }

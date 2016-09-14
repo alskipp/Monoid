@@ -10,7 +10,7 @@ extension Product: Monoid {
     return Product(T.one)
   }
 
-  public static func combine(a: Product, _ b: Product) -> Product {
+  public static func combine(_ a: Product, _ b: Product) -> Product {
     return Product(a.value * b.value)
   }
 }
@@ -21,12 +21,12 @@ extension Product: CustomStringConvertible {
   }
 }
 
-extension Product: Equatable, Comparable, Orderable {}
+extension Product: Equatable, Comparable, Orderable {
+  public static func == <N: NumberType>(x: Product<N>, y: Product<N>) -> Bool {
+    return x.value == y.value
+  }
 
-public func == <N: NumberType>(x: Product<N>, y: Product<N>) -> Bool {
-  return x.value == y.value
-}
-
-public func < <N: NumberType>(x: Product<N>, y: Product<N>) -> Bool {
-  return x.value < y.value
+  public static func < <N: NumberType>(x: Product<N>, y: Product<N>) -> Bool {
+    return x.value < y.value
+  }
 }

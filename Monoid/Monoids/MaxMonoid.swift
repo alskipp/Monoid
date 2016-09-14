@@ -7,10 +7,10 @@ public struct Max<Element: Comparable> {
 
 extension Max: Monoid {
   public static var mempty: Max {
-    return Max(.None)
+    return Max(.none)
   }
 
-  public static func combine(a: Max, _ b: Max) -> Max {
+  public static func combine(_ a: Max, _ b: Max) -> Max {
     return max(a, b)
   }
 }
@@ -22,17 +22,17 @@ extension Max: CustomStringConvertible {
   }
 }
 
-extension Max: Equatable, Comparable, Orderable {}
+extension Max: Equatable, Comparable, Orderable {
+  public static func == <T: Equatable>(x: Max<T>, y: Max<T>) -> Bool {
+    return x.value == y.value
+  }
 
-public func == <T: Equatable>(x: Max<T>, y: Max<T>) -> Bool {
-  return x.value == y.value
-}
-
-public func < <T: Comparable>(x: Max<T>, y: Max<T>) -> Bool {
-  switch (x.value, y.value) {
-  case (.None, .None): return false
-  case (.None, .Some): return true
-  case (.Some, .None): return false
-  case let (.Some(a), .Some(b)): return a < b
+  public static func < <T: Comparable>(x: Max<T>, y: Max<T>) -> Bool {
+    switch (x.value, y.value) {
+    case (.none, .none): return false
+    case (.none, .some): return true
+    case (.some, .none): return false
+    case let (.some(a), .some(b)): return a < b
+    }
   }
 }

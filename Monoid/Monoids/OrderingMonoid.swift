@@ -2,12 +2,12 @@
 
 extension Ordering: Monoid {
   public static var mempty: Ordering {
-    return .EQ
+    return .eq
   }
 
-  public static func combine(a: Ordering, _ b: Ordering) -> Ordering {
+  public static func combine(_ a: Ordering, _ b: Ordering) -> Ordering {
     switch (a, b) {
-    case (.EQ, _): return b
+    case (.eq, _): return b
     default: return a
     }
   }
