@@ -32,7 +32,7 @@ extension Commune: Monoid {
     return Commune(people: [], turnips: 0, holyTurnipMass: 0)
   }
 
-  static func combine(a: Commune, _ b: Commune) -> Commune {
+  static func combine(_ a: Commune, _ b: Commune) -> Commune {
     return Commune(people: a.people + b.people,
                    turnips: a.turnips + b.turnips,
                    holyTurnipMass: max(a.holyTurnipMass, b.holyTurnipMass))

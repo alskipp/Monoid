@@ -40,7 +40,7 @@ let sortedRecords = records.sortBy { x, y in
 sortedRecords
 
 //: Equivalent sorting code without a friendly Ordering Monoid 🙈
-let sortedRecords2 = records.sort { x, y in
+let sortedRecords2 = records.sorted { x, y in
   if x.height == y.height {
     if x.weight == y.weight {
       if x.age == y.age {
