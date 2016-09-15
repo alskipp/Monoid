@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/alskipp/Monoid.svg?branch=master)](https://travis-ci.org/alskipp/Monoid)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![Swift 2.1](https://img.shields.io/badge/Swift-2.1-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 An implementation of Monoids in Swift. I'll add more explanation at some point, but for now, let's jump straight to a practical example: Sorting.
 
@@ -61,7 +61,7 @@ There are many more Monoids defined in the project with examples in the Xcode Pl
 
 ## Current limitations
 
-Using Swift 2, it is not possible to define various Monoids. Such as:
+Using Swift 3, it is not possible to define various Monoids. Such as:
 
 ```swift
 extension Optional: Monoid where Wrapped: Monoid {}
@@ -74,6 +74,6 @@ Which is the same restriction that prevents making Array Equatable with:
 extension Array: Equatable where Element: Equatable {}
 ```
 
-There's a good chance that this will be possible with Swift 3. 😊
+There's a chance that this will be possible with Swift 4, or maybe even Swift 3.1 – one can hope.
 
-Another limitation is the inability to extend Tuples, though whether this limitation will be removed in Swift 3, I'm not sure. Despite these current limitations I think it's still worth while just to get the `Ordering` Monoid.
+Another limitation is the inability to extend Tuples, though whether this limitation will be removed in Swift, I'm not sure. Despite these current limitations I think it's still worth while just to get the `Ordering` Monoid.
