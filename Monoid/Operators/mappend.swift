@@ -2,7 +2,7 @@
 
 precedencegroup Monoidal {
   associativity: right
-  higherThan: DefaultPrecedence
+  lowerThan: AdditionPrecedence
 }
 infix operator <> : Monoidal
 
