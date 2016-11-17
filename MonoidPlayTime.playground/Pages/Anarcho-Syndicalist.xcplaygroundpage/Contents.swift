@@ -48,3 +48,4 @@ let communes = [
 
 Commune.mconcat(communes)
 
+//: [**Next page ->** (Fold)](@next)
