@@ -3,7 +3,7 @@
 
  [**<- Previous page**](@previous)
  * * *
- ## Experimental Fold
+ ## Experimental Foldable protocol
  */
 import Monoid
 //: We'll need `id` and `curry` functions
